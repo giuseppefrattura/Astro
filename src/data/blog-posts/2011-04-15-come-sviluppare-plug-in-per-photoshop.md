@@ -3,7 +3,7 @@ slug: come-sviluppare-plugin-per-photoshop
 published: true
 title: Come sviluppare plug-in per Photoshop
 publishDate: 15 Apr 2011
-description: Come sviluppare plug-in per Photoshop
+description: Introduzione allo sviluppo di plug-in per Photoshop.
 ---
 
 

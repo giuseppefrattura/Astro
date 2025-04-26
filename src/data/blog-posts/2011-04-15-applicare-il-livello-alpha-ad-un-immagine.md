@@ -3,7 +3,7 @@ slug: Applicare il livello alpha ad un immagine
 published: true
 title: Applicare il livello alpha ad un immagine
 publishDate: 15 Apr 2011
-description: Every blog starts with a single post. This is yours. Make it great.
+description: Procedura per applicare un livello alpha a un'immagine.
 ---
 
 Per un applicazione per dispositivi iOS ho dovuto effettuare dei piccolissimi ritocchi a delle foto su dispositivo. In questo breev post descrivo il procedimento per la modifica di un'immagine applicando un livello di trasparenza detto livello alpha.

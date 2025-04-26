@@ -3,7 +3,7 @@ slug: Impostare un immagine come sfondo di un applicazione iPhone
 published: true
 title: Impostare un immagine come sfondo di un applicazione iPhone
 publishDate: 15 Apr 2011
-description: Impostare un immagine come sfondo di un applicazione iPhone
+description: Come impostare un'immagine come sfondo in un'app iOS.
 ---
 <p>
 In questo post vedremo come impostare un'immagine come sfondo all'interno di una view della nostra applicazione iOS.<br/>

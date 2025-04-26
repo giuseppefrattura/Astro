@@ -3,7 +3,7 @@ slug: Come impostare il proprio nome come autore di ogni progetto Xcode
 published: true
 title: Come impostare il proprio nome come autore di ogni progetto Xcode
 publishDate: 15 Apr 2011
-description: Come impostare il proprio nome come autore di ogni progetto Xcode
+description: Modifica del nome autore predefinito nei progetti Xcode.
 ---
 
 Ogni volta che si crea un nuovo progetto Xcode imposta in automatico la stringa
