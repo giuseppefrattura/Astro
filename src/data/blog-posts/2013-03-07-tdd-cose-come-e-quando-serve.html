@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: TDD cos'&egrave;, come e quando serve
+date: '2013-03-07 12:33:24 +0100'
+date_gmt: '2013-03-07 10:33:24 +0100'
+categories:
+- Programmazione
+tags:
+- TDD
+comments: []
+---
+<p>Il TestDriveDevelopment &egrave; una metodologia di sviluppo tipicamente utilizzata con modelli di sviluppo Agili. I modelli di sviluppo agili pi&ugrave; conosciuti sono lo SCRUM e l'Extreme Programming. Nonostante sia spesso utilizzato in questi ambiti &egrave; possibile fare TDD qualunque sia il modello di sviluppo si preferisca usare.</p>
+
+<!--more-->
+
+<h3>In cosa consiste</h3>
+<p>
+	Per prima cosa bisogna dire che non &egrave; semplice partire da zero con il TDD, il concetto di base &egrave; partire da una funzionalit&agrave; che il nostro software deve avere, a questo punto creiamo un test.....
+Si, pu&ograve; sembrare una cosa strana ma creiamo un test sul corretto funzionamento della funzionalit&agrave; che dobbiamo ancora andare a implementare. Una volta fatto il test lo eseguiamo e come &egrave; logico pensare il test fallir&agrave;. Ora possiamo iniziare a scrivere la nostra nuova funzionalit&agrave;, finita la quale il test dovr&agrave; dare esito positivo. Come passo finale si effettua la ristrutturazione del codice, ovvero si integra questa nuova funzionalit&agrave; all'interno del codice precedentemente scritto in modo da mantenerlo leggibile e manutenibile evitando le cos&igrave; dette Bad Smell.</p>
+
+<img class="img-fluid"  alt="TDD Cicle" src="{{ site.url }}/assets/tdd_cycle.jpg" width="295" height="295" />
+
+<h3>I vantaggi del TDD</h3>
+<p>
+Il codice scritto in TDD &egrave; sicuramente pi&ugrave; chiaro e facile da comprendere di codice scritto con altre modalit&agrave;, i test possono descrivere appieno le funzionalit&agrave; del programma. Inoltre &egrave; possibile verificare se quando si fa una modifica al codice il programma non funziona pi&ugrave; correttamente, semplicemente rieseguendo la batteria di test.</p>
+
+<h3>I difetti del TDD</h3>
+<p>Non tutto &egrave; testabile, in particolare tutte le applicazioni che affidano molto alla grafica ed all'interazione con l'utente sono scarsamente testabili, applicazioni che si collegano ad internet hanno bisogno di eventuali Stub per poter simulare il collegamento anche in fase di test.<br />
+Bisogna imparare a programmare in TDD, cosa che non &egrave; immediata. Il TDD ha una curva di apprendimento abbastanza alta che aumenta ancora di pi&ugrave; se bisogna imparare anche un nuovo linguaggio di programmazione, un nuovo modello di sviluppo software o un nuovo framework.</p>
+
+<p>Hai mai programmato in TDD? Hai notato dei miglioramenti nel funzionamento dei tuoi programmi o nella stessa velocit&agrave; di sviluppo?</p>

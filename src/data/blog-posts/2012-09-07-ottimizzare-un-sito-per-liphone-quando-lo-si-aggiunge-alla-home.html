@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: Ottimizzare un sito per l&rsquo;iphone quando lo si aggiunge alla home
+date: '2012-09-07 09:34:42 +0200'
+categories:
+- Web programming
+tags:
+- iPhone
+- Home
+comments: []
+---
+<p>Quando dal proprio iPhone o iPad si naviga in internet con Safari si ha la possibilit&agrave; di aggiungere un sito alla home, rendendolo accessibile tramite un icona esattamente come se fosse un applicazione.</p>
+<!--more-->
+<p>
+  In questo articoli voglio darti tre codici che ti aiuteranno a rendere pi&ugrave; curato il tuo sito web.</p>
+
+<h3>L&rsquo;icona dell&rsquo;applicazione</h3>
+si pu&ograve; personalizzare usando i seguenti metatag:
+Per l&rsquo;icona normale
+
+
+{% highlight html linenos %}
+<link rel="apple-touch-icon" href="img&#47;icon.png"/>
+{% endhighlight %}
+
+<p>Per eliminare l&rsquo;effetto Gloss sull&rsquo;icona</p>
+
+{% highlight html linenos %}
+<link rel="apple-touch-icon-precomposed" href="img&#47;icon.png"/>
+{% endhighlight %}
+
+<p>Icona ottimizzata per iPhone4 o New Ipad</p>
+
+{% highlight html linenos %}
+<link rel="apple-touch-icon" sizes="114x114" href="img&#47;icon-iphone4.png"/>
+{% endhighlight %}
+
+<p>Lo splash screen &egrave; un immagine che viene mostrata all&rsquo;avvio dell&rsquo;applicazione, per visualizzarla dobbiamo usare un&rsquo;immagine di 320x460 pixel ed inserire il codice</p>
+<p>
+
+{% highlight html linenos %}
+<link rel="apple-touch-startup-image" href="img&#47;splash.png" />
+{% endhighlight %}

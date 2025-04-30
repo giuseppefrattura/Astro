@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: Come programmare OpenGL con C su Mac OsX
+date: '2012-10-17 15:54:18 +0200'
+categories:
+- Programmazione
+tags:
+- OpenGL
+- C
+- Mac
+- XCode
+comments: []
+---
+<p>Per provare del codice OpenGL su mac &egrave; possibile utilizzare Xcode, la potentissima IDE creata dalla Apple. Per farlo i passi sono pochi e semplici.</p>
+<!--more-->
+<p>Creare un nuovo progetto Xcode e creiamo un applicazione di tipo command line tool scegliendo come linguaggio di programmazione &lsquo;c&rsquo;.</p>
+<p><img class="img-fluid"  title="Creazione progetto Xcode" alt="" src="{{ site.url }}/assets/CommandLineTool.jpg" width="100%" /> Crea un applicazione per Mac OsX di tipo command line tool</p>
+<p>Nelle impostazioni del progetto andiamo su Build Phases -> Link Binary With Libraries ed aggiungiamo &ldquo;openGL.framework&rdquo; e &ldquo;GLUT.framework&rdquo;.</p>
+<p><img class="img-fluid"  title="Librerie caricate" alt="" src="{{ site.url }}/assets/OpenFramework.jpg" width="100%" /> Pagina di caricamento delle librerie</p>
+
+<p>A questo punto baster&agrave; importare all&rsquo;inizio del codice del main le librerie desiderate:</p>
+
+{% highlight ruby linenos %}
+#include "GLUT/glut.h"
+#include "OPENGL/opengl.h"
+{% endhighlight %}
+
+<p>ed il gioco &egrave; fatto!</p>

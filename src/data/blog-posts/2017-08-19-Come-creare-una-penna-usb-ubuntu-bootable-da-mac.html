@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: Come creare una versione di ubuntu lanciabile da penna usb
+date: '2017-08-19 10:06:54 +0200'
+categories:
+- Tech
+tags:
+- Ubuntu
+- Mac
+comments: []
+---
+<p>
+<img class="img-fluid"  alt='' src="{{ site.url }}/assets/ubuntu.jpg" />
+Quando qualcosa non funziona nel nostro pc e non riusciamo più a farlo partire, prima di formattarlo possiamo provare a ripararlo o almeno fare i backup dei dati tramite una versione live di Linux. In questo articolo ti spiego come creare da Mac OS una versione di Ubuntu che possa partire da USB.
+</p>
+<!--more-->
+<p>
+  Ubuntu è una delle distribuzioni di Linux più conosciute e facili da usare, molti uffici sono
+  riusciti a passare da Windows a Ubuntu senza troppi problemi per la formazione o senza avere
+  cali di produttività. Ci sono numerose applicazioni, sia per la produttività che per la gestione del
+  sistema. Inoltre è possibile utilizzare Ubuntu ( e anche molte altre distribzioni ) in modalità
+  <b>Live</b>, ovvero senza installarle su di un disco fisso, proprio per questo motivo queste versioni
+  sono molto utilizzate per il salvataggio di dati o per fixare problemi su di un sistema che non riesce
+  più a partire.
+</p>
+<p>
+  Per creare una versione di Ubuntu che parta dalla penna usb da Mac è necassario utilizzare un piccolo
+  software gratuito, <a href="https://unetbootin.github.io">unetbootin</a>.
+</p>
+  Bisogna prima di tutto avere una penna usb da almeno 2GB, formattarla con 'Disk Utility' selezionando
+  il file System MS-DOS (FAT) e lo schema GUID Partition Map.
+</p>
+<p>
+  Ora bisogna avere la ISO di Ubuntu scaricabile dalla <a href="https://www.ubuntu.com/download">pagina
+  ufficiale</a>
+</p>
+<p>
+  Non essendo fatto da sviluppatori certificati probabilmente Mac OS no permetterà l'esecuzione di
+  unetbootin, dovrai quindi andare nelle preferenze del sistema, nella pagina 'security & Privacy'
+  e premere il bottone "open anyway"
+</p>
+<p><img class="img-fluid"  alt='' src="{{ site.url }}/assets/Unetbootin.jpg" />
+  A questo punto dall'applicazione seleziona "diskimage" -> ISO e il percorso dell'imagine di Ubuntu
+  che hai scaricato. Come Type seleziona invece 'USB Drive' ed inserisci il path della penna USB,
+  se hai una sola penna inserita apparirà quello giusto subito.
+</p>
+<p>
+  Premi ok, e vedrai la barra di avanzamento dell'installazione. Una volta finito la penna sarà pronta.
+</p>
+<p>
+  Se vuoi far partire Ubuntu da un Mac devi premere il pulsante Option / alt /⌥ durante l'avvio, su altri
+  sistemi dovrai accedere al BIOS ed impostare nell'ordine di boot la penna usb come prima.
+</p>

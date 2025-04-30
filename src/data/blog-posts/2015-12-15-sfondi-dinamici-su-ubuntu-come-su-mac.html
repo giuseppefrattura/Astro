@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: Sfondi dinamici su ubuntu come su mac
+date: '2015-12-20 19:06:54 +0200'
+categories:
+- Tech
+tags:
+- Ubuntu
+- Veriety
+comments: []
+---
+
+<p>
+Stanco di avere sempre lo stesso sfondo sul tuo Ubuntu? C'è un applicazione, gratuita logicamente, che ti consente non solo di cambiare lo sfondo in maniera automatica ogni volta che vuoi ma anche senza dover scaricare manualmente i vcari sfondi ma prendendoli dinamicamente da Internet.</p>
+<!--more-->
+<p>
+  L'applicazione si chiama <a href="http://peterlevi.com/variety/" ><strong>Variety</strong></a> è molto facile da installare e permette di inserire un insieme di fonti dalle quali prendere gli sfondi, tra i quali anche <a href="https://www.flickr.com/">Flickr</a>.
+</p>
+
+<p>
+Per installare l'applicazione eseguire i seguenti comandi:
+
+{% highlight ruby linenos %}
+sudo add-apt-repository ppa:peterlevi/ppa
+sudo apt-get update
+sudo apt-get install variety
+{% endhighlight %}
+</p>
+
+<img class="img-fluid"  alt="Variety" src="{{ site.url }}/assets/variety.png" />
+
+<p>
+Una volta inserita la password sarà possibile lanciare l'applicazione dal menu applicazioni. Al primo avvio chiederà quali fonti usare per i propri sfondi, e la periodicità con la quale cambiare sfondo.
+</p>

@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: Installare GLUT su Microsoft Visual Studio 2010
+date: '2013-02-04 23:29:03 +0100'
+date_gmt: '2013-02-04 21:29:03 +0100'
+categories:
+- web programming
+tags:
+- glut
+- OpenGL
+comments: []
+---
+<p>Per un progetto universitario mi &egrave; toccato installare windows per poter usare un progetto precedentemente creato con Visual Studio inerente alla Grafica Computazionale.</p>
+<!--more-->
+<p>In particolare il progetto ha come dipendenza GLUT, una libreria molto utilizzata con OpenGL. Visual Studio a differenza di Xcode non la contiene nativamente, bisogna quindi scaricarla da questo <a href="http://www.opengl.org/resources/libraries/glut/glut_downloads.php">link</a>.</p>
+<p>Tra i vari files ce ne sono tre che ci interessano:</p>
+<ul>
+  <li><em>glut.h</em> che va copiato ed incollato in &lsquo;C:Programmi/Microsoft Visual Studio 10.0/VCincludeGL/&rsquo;</li>
+<li><em>glut32.lib</em> in &lsquo;C:Programmi/Microsoft Visual Studio 10.0/VClib/&rsquo; &nbsp;<li>
+<li><em>glut32.dll</em> in &lsquo;C:Windows/System32/&rsquo;</li>
+</ul>
+<p>Fatto questo sar&agrave; possibile senza errori includere GLUT all'interno del proprio progetto tramite il comando&nbsp;</p>
+
+{% highlight ruby linenos %}
+#include <GL/glut.h>
+{% endhighlight %}

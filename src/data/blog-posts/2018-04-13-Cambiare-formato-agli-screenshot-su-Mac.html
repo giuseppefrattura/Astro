@@ -1,0 +1,46 @@
+---
+layout: post
+status: publish
+published: true
+title: Cambiare formato agli screenshot su Mac
+description: "Su mac è possibile creare uno screenshot del desktop con la combinazione di tasti cmd + shift + 3"
+date: '2018-04-13 10:06:54 +0200'
+categories:
+- Tech
+tags:
+- Mac OsX
+comments: []
+---
+
+<p>
+Su mac è possibile creare uno screenshot del desktop con la combinazione di tasti cmd + shift + 3, questo comando crea un'immagine png sul desktop. In questa breve guida vedremo come cambiare formato alle immagini così create.
+</p>
+<!--more-->
+<p>
+Sui sistemi operativi Apple da tantissimi anni ormai è possibile usare la combinazione di tasti cmd + shift + 3 per eseguire uno screenshot di tutto lo schermo o cmd + shift + 4 per eseguire lo screenshot di una parte di esso. Il formato del file è sempre png ma esiste un modo per cambiarlo.
+</p>
+<p>
+
+Per prima cosa bisogna lanciare il terminale, ci sono due modi:
+andare nella cartella Applicazioni->Utility e cercare l'app "terminale" oppure premere cmd + spazio, scrivere "terminale" e premere invio.
+</p>
+<p>
+Nella finestra del terminale copiate ed incollate il seguente comando:</br></br>
+  <strong>defaults write com.apple.screencapture type jpg;killall SystemUIServer</strong>
+</p>
+<p>
+Da ora ogni screenshot sarà in formato jpg. Gli altri formati possibili sono GIF, PDF e TIFF, li potete attivare inserendo i seguenti comandi:
+<ul>
+  <li><b>GIF</b> : defaults write com.apple.screencapture type gif;killall SystemUIServer</li>
+  <li><b>PDF</b> : defaults write com.apple.screencapture type pdf;killall SystemUIServer</li>
+  <li><b>TIFF</b> : defaults write com.apple.screencapture type tiff;killall SystemUIServer</li>
+</ul>
+
+</p>
+<p>
+Fonti:
+
+<ul>
+  <li><a href="https://www.hongkiat.com/blog/change-macos-screenshot-file-format">Hongkiat</a></li>
+<li><a href="https://attivissimo.blogspot.it/2014/12/os-x-cambiare-il-formato-degli.html">Attivissimo</a></li>
+</ul>

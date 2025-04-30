@@ -1,0 +1,21 @@
+---
+layout: post
+status: publish
+published: true
+title: Come rimuovere Xcode da Mac OS X
+date: '2012-02-19 18:49:39 +0100'
+categories:
+- Varie
+tags: []
+comments: []
+---
+<p>Se per una ragione o per un'altra &egrave; necessario rimuovere Xcode da Mac OS X &egrave; meglio farlo in modo sicuro, evitando di lasciare file inutilizzati in memoria e senza che ci siano problemi di reinstallazione in un secondo momento.</p>
+<!--more-->
+<p>Per eliminare Xcode basta cercare l&rsquo;applicazione &ldquo;Terminale&rdquo;, in Spotlight oppure andare in Applicazioni->Utility->Terminale e da li eseguire la stringa</p>
+
+{% highlight html linenos %}
+sudo /Developer/Library/uninstall-devtools -mode=all
+{% endhighlight %}
+
+<p>una volta eseguito questo codice vi verr&agrave; chiesto di inserire la password da amministratore, dopo una breve attesa Xcode sar&agrave; rimosso.</p>
+<p>Questa guida funziona sia per la versione 3 che per la 4 di Xcode, indipendentemente dal sistema operativo usato.</p>

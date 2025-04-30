@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: La tracciabilit&agrave; dei requisiti
+date: '2014-11-15 11:40:17 +0100'
+date_gmt: '2014-11-15 11:40:17 +0100'
+categories:
+- Programmazione
+tags:
+- Ingegneria del Software
+comments: []
+---
+<p>
+	La tracciabilit&agrave; dei requisiti &egrave; uno degli ambiti di ricerca pi&ugrave; interessanti dell&rsquo;Ingegneria del Software, essa consiste nella creazione di "tracce" tra artefatti software in modo da segnalarne le dipendenze. Per artefatti si intendono i requisiti di sistema, l&#039;architettura ( ad es. UML ), il codice sorgente ed i test case.
+</p>
+<!--more-->
+
+<p>
+	Premesso che sulla tracciabilit&agrave; dei requisiti sono stati scritti svariati libri e soprattutto molte pubblicazioni, in questo articolo descrivo brevemente in cosa consiste, quali sono i suoi benefici, i suoi svantaggi e i suoi utilizzi principali. La tracciabilit&agrave; dei requisiti &egrave; utilizzata principalmente nel <strong>riutilizzo del codice</strong> e nella <strong>Change Impact Analysis</strong>.
+</p>
+<p>
+	Il riutilizzo del codice pu&ograve; essere molto utile quando si sviluppano pi&ugrave; software per sistemi simili tra di loro, cio&egrave; quando tra due software alcuni dei requisiti sono in comune. Le tracce aiutano a capire quali siano le classi che implementano un particolare requisito, quindi quali andare ad inserire in un nuovo progetto che richieda le stesse funzionalit&agrave; offerte.
+</p>
+
+<p>
+	La Change Impact Analysis consiste invece nell&rsquo;analisi degli effetti che un cambiamento pu&ograve; apportare all&rsquo;interno di un sistema. Uno dei possibili casi d&rsquo;uso &egrave; la creazione di tracce tra un requisito, le classi del codice che lo soddisfa e il test case che ne verifica la correttezza. Nel momento in cui sia necessario effettuare un cambiamento al requisito di partenza &egrave; possibile calcolare il numero delle classi che potrebbero dover essere modificate grazie alle tracce. E&rsquo; possibile inoltre sapere quali sono i test case da modificare e lanciare nel caso in cui un requisito fosse modificato. Un cambiamento pu&ograve; essere implementato in modi diversi, la Change Impact Analysis serve anche a determinare quale possa essere il metodo pi&ugrave; conveniente e quante risorse ( uomo/ora ) possano essere necessarie.
+</p>
+
+<p>
+	<img class="img-fluid"  alt="Software Traceability" src="{{ site.url }}/assets/Vertical-Traceability.jpg" />
+</p>
+
+<p>
+	Per quanto detto cos&igrave; possa sembrare semplice, bisogna pensare che le componenti di codice hanno legami di dipendenza (tracce) tra di loro, questo comporta che quando da un requisito si calcola il codice necessario alla sua implementazione &egrave; necessario esaminare tutte le dipendenze a cascata con la possibilit&agrave; di far crescere in maniera esponenziale gli elementi dipendenti. Per diminuire gli elementi non realmente dipendenti una delle possibili soluzioni &egrave; di aggiungere della semantica alle tracce, caratterizzarle quindi con aggettivi del tipo: include, dipende, implementa, necessita di, ecc&hellip;
+</p>
+
+<p>
+	Per avere senso le tracce per&ograve; devono essere corrette e curate dall&rsquo;inizio di un progetto, questo comporta per&ograve; un costo di tempo e risorse durante lo sviluppo davvero notevole, ragion per cui si stanno impiegando parecchie risorse nella ricerca di soluzioni basate sull&rsquo;Information Retrieval per poter costruire tracce in maniera automatica su un software gi&agrave; sviluppato in precedenza.
+</p>

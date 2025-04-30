@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: Leggere un file in Python riga per riga
+date: '2012-06-06 19:02:48 +0200'
+categories:
+- Programmazione
+tags:
+- Python
+comments: []
+---
+<p>Python &egrave; un linguaggio di scripting, &egrave; quindi molto usato per modificare file di testo con contenuti ripetitivi o ai quali bisogna applicare delle modifiche in maniera ripetitiva.</p>
+<p>Ci sono tre modi per leggere un file in Python riga per riga:</p>
+<!--more-->
+<h3>Leggere tutto in una volta:</h3>
+{% highlight ruby linenos %}
+f = open('myfile.txt')
+lines = f.readlines()
+f.close()
+for line in lines:
+    print line,
+{% endhighlight %}
+
+
+<p>Leggere tutto in una volta l&rsquo;elaborazione &egrave; pi&ugrave; veloce ma pu&ograve; risultare molto esoso in termini di memoria se il file &egrave; grande.</p>
+
+<h3>Leggere una riga alla volta con un ciclo:</h3>
+
+{% highlight ruby linenos %}
+f = open('myfile.txt')
+line = f.readline()
+while line:
+   print line,
+   line = f.readline()
+f.close()
+{% endhighlight %}
+
+
+In questo modo si legger&agrave; effettivamente una sola riga alla volta.</p>
+<h3>Leggere una riga alla volta con un iteratore:</h3>
+
+{% highlight ruby linenos %}
+f = open('myfile.txt')
+for line in iter(f):
+   print line,
+f.close()
+{% endhighlight %}

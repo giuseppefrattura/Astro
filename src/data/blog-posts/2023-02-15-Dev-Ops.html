@@ -1,0 +1,106 @@
+---
+layout: post
+status: publish
+published: true
+title: DevOps
+description: Che cos'è il DevOps
+date: '2023-02-15 08:06:54 +0200'
+categories:
+- Varie
+tags:
+background: '/img/posts/06.jpg'
+---
+
+<p>
+  <img class="img-fluid"  alt='DevOps' src="{{ site.url }}/assets/devops/devops.png" />
+  Quando si parla di DevOps non ci si riferisce a una posizione lavorativa bensì a una strategia per aumentare l’efficienza dello sviluppo di un progetto software unendo le fasi di sviluppo (DEV) e operation (OPS) creando così un ciclo di Continuous Integration e Continuous Delivery. Obbiettivo della pratica DevOps è aumentare la velocità, la qualità, la stabilità nello sviluppo software.
+</p>
+<!--more-->
+
+  
+  <h3>Dev</h3>
+  <p>
+    Per dev si intendono gli sviluppatori (Software Developer) la cui  responsabilità è di scrivere il codice che implementa la logica business. I Dev hanno principalmente a che fare con il codice.
+  </p>
+  
+  <h3>Ops</h3>
+  <p>
+    Detti anche IT Operations sono invece i responsabili per la gestione dei datacenter, l’installazione e il setup delle macchine, la gestione della rete, il monitoring e l’alerting.
+  </p>
+  
+  <h3>SRE</h3>
+  <p> Reliability Engineer, è una figura professionale creata all’interno di Google nel 2003. Google aveva servizi su larga scala (come lo stesso motore di ricerca) complessi e che richiedevano un’elevata stabilità. Gli sviluppatori inoltre erano più orientati allo sviluppo di nuove funzionalità che alla manutenzione del software preesistente. Fu così che nacque la figura del SRE che aveva come compito principale mantenere la stabilità dei servizi Google. 
+      Gli SRE sono in pratica un’evoluzione degli OPS ma a differenza di loro non hanno più a che fare con l’hardware. Creano strumenti appositi per assicurarsi della stabilità del sistema e tipicamente hanno un ottima conoscenza nella programmazione software che usano per creare strumenti che li aiutino nel loro lavoro. 
+  </p>
+  
+  <h3>DevOps</h3>
+  <p>
+  Come detto prima DevOps è una metodologia. 
+  </p>
+  <strong>In DevOps se si può automatizzare qualcosa bisogna farlo!</strong>  
+  <p>
+  I benefici dell’automazione sono che il team si può concentrare sul prodotto in se, i risultati sono ripetibili, predicibili e in caso di problemi si può arrivare alla loro soluzione più velocemente.
+  Per questo CI/CD è una parte fondamentale del DevOps.
+  </p>
+  <p>
+  Il DevOps Engineer analizza il problema dall’alto, gestendo:
+  <ul>
+    <li>i workflows;</li>
+    <li>settaggio e configurazione delle infrastrutture;</li>
+    <li>permessi di sistema;</li>
+    <li>i bisogni dei vari team.</li>
+  </ul>
+  </p>
+
+  <h3>DevSecOps (DevOps + Security)</h3>
+  <p> 
+  DevSecOps è un approccio dove si inserisce la sicurezza all’interno del ciclo di vita dello sviluppo, a ogni suo livello, inserendo appositi controlli di sicurezza nelle pipeline CI/CD.
+  Una parte fondamentale, ad esempio, è l’analisi statica del codice fatta all’interno della pipeline di CI prima della fase di build. In questo modo è possibile individuare alcuni bug o cattivo uso della memoria o ancora individuare possibili falle che hackers potrebbero utilizzare.
+  </p>
+  
+  <h3>Approccio CALMS</h3>
+  <p> CALMS sta per Culture, Automation, Lean, Measurement, Sharing. È un framework trattato nel The DevOps Handbook.
+  È un acronimo delle caratteristiche per adottare a pieno il modello DevOps.
+  Cultura - Rimuovere i compartimenti stagni e condividi le responsibilità:
+  <ul>
+    <li> Automazione - Riduci il tempo speso in attività manuali;</li>
+    <li>Lean - Semplifica i processi per velocizzare i tempi;</li>
+    <li>Misura - Estrai e analizza i dati e trova punti dove ottimizzare;</li>
+    <li>Condivisione - collaborazione tra team.</li>
+  </ul>
+  </p>
+
+  <h3>Build Manager</h3>
+  <p>Ci sono poi figure che agevolano la metodologia DevOps come il Build Manager che si occupa di mantenere le automazioni che rendono possibile la Continuous Integration (CI).</p>
+  
+  <h3>Release Manager</h3>
+  <p>Il Release Manager dirige le build che devono essere rilasciate. Si occupa di comunicare quello che è incluso in un determinato rilascio.</p>
+  
+  
+  <h3>GitOps</h3>
+  <p>
+    GitOps rappresenta invece un approccio al DevPps basato su Git, il software di version tracking più utilizzato. Molte pipeline di CI/CD usano GIT e sono scatenate da eventi di questo software. Tramite Git è più facile gestire i rollback in caso di errori nel deploy. È possibile inserirvi anche l’infrastructure as code (IaC), come ad esempio terraform, versionando quindi anche l’infrastruttura e non solo il codice.
+  </p>
+  <img class="img-fluid"  alt='DevOps' src="{{ site.url }}/assets/devops/devops1.webp" />
+  <h3>Le metriche DORA</h3>
+  <p>
+  Una metrica usata per misurare l’efficienza di un team è DORA. Questa si basa su quattro valori:
+  <ul>
+  <li> Deployment frequency </li>
+<li>Lead Time for Changes</li>
+<li>Change Failure Rate </li>
+<li>Time to Restore Services</li>
+</ul>
+  Le prime due metriche misurano la velocità, le altre due la stabilità.
+  </p>
+  
+  <h3>Considerazioni sulla Capacity </h3>
+  I DevOps hanno inoltre il compito di misurare costi e requisiti di un sistema facendosi domande del tipo:
+<ul>
+<li>Il servizio attuale riesce a gestire bene l’attuale volume di utenti?</li>
+<li>Cosa bisognerebbe fare in caso di aumento massivo degli utenti?</li>
+<li>Quale sarebbe l’eventuale costo?</li>
+<li>C’è un collo di bottiglia nella nostra infrastruttura?</li>
+<li>Come è possibile massimizzare l’uptime dei servizi?</li>
+</ul> 
+  

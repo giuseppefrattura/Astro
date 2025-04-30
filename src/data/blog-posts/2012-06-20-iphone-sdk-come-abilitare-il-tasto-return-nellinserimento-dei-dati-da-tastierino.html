@@ -1,0 +1,39 @@
+---
+layout: post
+status: publish
+published: true
+title: 'iPhone SDK: Come abilitare il tasto return nell''inserimento dei dati da tastierino'
+date: '2012-06-20 10:17:58 +0200'
+categories:
+- iPhone
+tags:
+- iPhone
+comments: []
+---
+<p>Quando si usano Text Field con Xcode &egrave; automatica l'apparizione del tastierino numerico nella parte bassa della stessa, purtroppo non &egrave; automatica la sua scomparsa, mi sono trovato recentemente con questa problematica ed ora spiegher&ograve; come abilitare il tasto return nell'inserimento dei dati da tastierino.</p>
+<!--more-->
+<p>
+All'interno del file file ViewController.h modifichiamo la definizione di interface aggiungendo "<UITextFieldDelegate>" come segue:</p>
+
+{% highlight ruby linenos %}
+@interface YourViewController : UIViewController <UITextFieldDelegate>
+{% endhighlight %}
+
+Ora nel rispettivo file .m dobbiamo aggiungere il metodo:
+
+{% highlight ruby linenos %}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+[textField resignFirstResponder];
+  return YES;
+}
+{% endhighlight %}
+
+<p>Poi nel metodo viewDidLoad aggiungiamo la seguente riga, impostando il delegato di ogni Text Field al quale vuoi abilitare la funzionalit&agrave; della chiusura della tastiera.</p>
+
+{% highlight ruby linenos %}
+yourTextField.delegate = self;
+{% endhighlight %}
+
+<p>Per approfondire visitate il sito
+  <a href="http://stackoverflow.com/questions/6190276/how-to-make-return-key-on-iphone-make-keyboard-disappear">http://stackoverflow.com/questions/6190276/how-to-make-return-key-on-iphone-make-keyboard-disappear</a></p>

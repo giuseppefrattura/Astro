@@ -1,0 +1,248 @@
+---
+layout: post
+status: publish
+published: true
+title: Aggiungere nuove features al proprio tema wordpress
+date: '2013-04-07 22:04:48 +0200'
+categories:
+- web
+tags:
+- wordpress
+comments:
+- id: 3
+  author: Gabriele Franceschi
+  author_email: gabri.france@gmail.com
+  author_url: http://www.gabrielefranceschi.it/blog
+  date: '2013-04-08 11:25:52 +0200'
+  date_gmt: '2013-04-08 09:25:52 +0200'
+  content: |-
+    Molto interessante!
+    Grazie
+---
+<p>Creare un tema wordpress &egrave; reso sempre pi&ugrave; facile dalle molte guide che si trovano su internet, voglio condividere alcuni dei cos&igrave; detti code snippet che ho trovato e che consentono di aumentare il numero di features del proprio tema.</p>
+<!--more-->
+
+<h3>Aggiungere automaticamente Open Graph ai tuoi post</h3>
+<p>Open Graph &egrave; un protocollo creato da facebook che rende il contenuto della pagina pi&ugrave; facilmente riconoscibile dal social network.</p>
+
+<p>Bisogna inserire il seguente codice all'interno del file functions.php del proprio tema.</p>
+
+{% highlight ruby linenos %}
+function wptuts_opengraph_for_posts() {
+    if ( is_singular() ) {
+        global $post;
+        setup_postdata( $post );
+        $output = '<meta property="og:type" content="article" />' . "n";
+        $output .= '<meta property="og:title" content="' . esc_attr( get_the_title() ) . '" />' . "n";
+        $output .= '<meta property="og:url" content="' . get_permalink() . '" />' . "n";
+        $output .= '<meta property="og:description" content="' . esc_attr( get_the_excerpt() ) . '" />' . "n";
+        if ( has_post_thumbnail() ) {
+            $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+            $output .= '<meta property="og:image" content="' . $imgsrc[0] . '" />' . "n";
+        }
+        echo $output;
+    }
+}
+add_action( 'wp_head', 'wptuts_opengraph_for_posts' );
+{% endhighlight %}
+
+
+<p>Ora all'interno dell'header dell'header.php del proprio tema si modifica quella che dovrebbe essere la prima riga di codice, il tag HTML con</p>
+
+{% highlight ruby linenos %}
+<html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">
+{% endhighlight %}
+
+nel caso di html5 si pu&ograve; anche scrivere
+
+{% highlight ruby linenos %}
+<!DOCTYPE html prefix="og: http://ogp.me/ns#">
+{% endhighlight %}
+
+<h3>Sostituisci automaticamente le parole all'interno dei tuoi post</h3>
+<p>Nel caso dovessi sostituire alcune parole all'interno di tutti i tuoi post basta copiare il seguente codice all'interno del file functions.php.</p>
+
+{% highlight ruby linenos %}
+function replace_text_wps($text){
+    $replace = array(
+        // 'WORD TO REPLACE' => 'REPLACE WORD WITH THIS'
+        'wordpress' => '<a href="#">wordpress</a>',
+        'excerpt' => '<a href="#">excerpt</a>',
+        'function' => '<a href="#">function</a>'
+    );
+    $text = str_replace(array_keys($replace), $replace, $text);
+    return $text;
+add_filter('the_content', 'replace_text_wps');
+add_filter('the_excerpt', 'replace_text_wps');
+{% endhighlight %}
+
+<h4>Rimuovere gli elementi dalla barra amministratore di wordpress</h4>
+Se si vuole evitare che un amministratore acceda ad alcuni men&ugrave; come quello dei plugin o quello delle impostazioni basta incollare il seguente codice all'interno del file functions.php.</p>
+
+{% highlight ruby linenos %}
+function wps_admin_bar() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('wp-logo');
+    $wp_admin_bar->remove_menu('about');
+    $wp_admin_bar->remove_menu('wporg');
+    $wp_admin_bar->remove_menu('documentation');
+    $wp_admin_bar->remove_menu('support-forums');
+    $wp_admin_bar->remove_menu('feedback');
+    $wp_admin_bar->remove_menu('view-site');
+}
+add_action( 'wp_before_admin_bar_render', 'wps_admin_bar' );
+{% endhighlight %}
+
+<h4>Cambiare la scritta del footer della parte amministrativa</h4>
+<p>
+Cambiare la scritta del footer nella parte amministrativa &egrave; a volte utile in quanto &egrave; brutto vendere un prodotto con la scritta &ldquo;Grazie per aver creato questo sito usando WordPress&rdquo;, &egrave; anche facile da fare, come al solito si inserisce del codice all'interno del file functions.php;</p>
+
+
+{% highlight ruby linenos %}
+function remove_footer_admin () {
+    echo "Testo da aggiungere";
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
+{% endhighlight %}
+</p>
+<h4>Cambiare il mittente delle mail di Wordpress</h4>
+<p>
+  Se vuoi cambiare il mittente delle mail che Wordpress invia a te o agli utenti registrati devi (come sempre) inserire le seguenti righe di codice all'interno del fiile functions.php file.</p>
+
+{% highlight ruby linenos %}
+add_filter('wp_mail_from', 'new_mail_from');
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+
+function new_mail_from($old) {
+ return 'admin@yourdomain.com';
+}
+function new_mail_from_name($old) {
+ return 'Your Blog Name';
+}
+{% endhighlight %}
+</p>
+<h4>Creare un pulsante &ldquo;pin it&rdquo; di Pinterest per il tuo sito wordpress</h4>
+<p><img class="img-fluid"  alt="Logo Pinterest" src="{{ site.url }}/assets/Pinterest_hg_full_l.jpg" width="300" height="200" /> Pinterest, uno dei nuovi social network che sta riscuotendo un grandissimo successo</p>
+<p>Pinterest &egrave; un sito dove le persone condividono le immagini appartenenti a siti internet. Cos&igrave; come per Facebook o Twitter, puoi aggiungere un bottone di Pinterest all'interno del tuo sito per rendere pi&ugrave; facile la condivisione dei tuoi articoli. Basta copiare il seguente codice all'interno del proprio sito (non all'interno del file functions.php ma all'interno di header, index, footer, single o page).</p>
+
+
+{% highlight ruby linenos %}
+<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&amp;media=<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); echo $thumb['0']; ?>&amp;description=<?php the_title(); ?>" class="pin-it-button" count-layout="horizontal">Pin It</a>
+{% endhighlight %}
+<p>Una volta fatto basta caricare la libreria javascript di pinterest inserendo nel footer il seguente codice:</p>
+
+{% highlight ruby linenos %}
+<script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+{% endhighlight %}
+</p>
+
+<h4>Aggiungi un bottone per condividere gli articoli su Google+</h4>
+<img class="img-fluid"  alt="Google Plus" src="{{ site.url }}/assets/google+.png" width="300" height="146" /> Google+ il social network di Google
+<p>Google+ &egrave; un social network che sta vedendo un discreto successo, anche se come numero di utenti &egrave; inferiore a Facebook ha una vocazione &ldquo;leggermente&rdquo; pi&ugrave; professionale. Per aggiungere un pulsante di google+ nei post di wordpress incolla il codice seguente all'interno del file functions.php:</p>
+
+
+{% highlight ruby linenos %}
+add_filter('the_content', 'wpr_google_plusone');
+function wpr_google_plusone($content) {
+	$content = $content.'
+<div class="plusone"><g:plusone size="tall" href="'.get_permalink().'"></g:plusone></div>';
+	return $content;
+}
+add_action ('wp_enqueue_scripts','wpr_google_plusone_script');
+function wpr_google_plusone_script() {
+	wp_enqueue_script('google-plusone', 'https://apis.google.com/js/plusone.js', array(), null);
+}
+{% endhighlight %}
+
+
+<h3>Mostra il tuo ultimo update di Google+</h3>
+Se usi in prima persona Google+ potresti voler mostrare qual'&egrave; il tuo ultimo post o elemento condiviso. Per farlo copia nel tuo sito il seguente codice:
+
+{% highlight ruby linenos %}
+<?php
+	include_once(ABSPATH.WPINC.'/rss.php');
+	$googleplus = fetch_feed("http://plusfeed.appspot.com/103329092193061943712"); // Sostituisci il numero 103329092193061943712 con il tuo id di Google+
+	echo '<a href="';
+	echo $googleplus->items[0]['link']; echo '">';
+	echo $googleplus->items[0]['summary'];
+	echo '';
+?>
+{% endhighlight %}
+
+
+<h4>Aggiungere i pulsanti per la condivisione su twitter e Facebook all'interno di ogni post</h4>
+<img class="img-fluid"  alt="The Facebook" src="{{ site.url }}/assets/iscriversi-a-facebook.jpg" width="300" height="170" />
+<img class="img-fluid"  class="alignnone size-medium wp-image-890" alt="Twitter Logo" src="{{ site.url }}/assets/twitter_logo_grande.jpg" width="300" height="110" /></p>
+<p>Facebook and Twitter sono i due social network pi&ugrave; utilizzati e non ricordo di siti che non consentano di condividere i propri contenuti su di essi. Come al solito copia il seguente codice all'interno del file functions.php. Mostrer&agrave; i bottoni di condivisione di Facebook e Twitter alla fine di ogni articolo.</p>
+
+
+{% highlight ruby linenos %}
+function share_this($content){
+    if(!is_feed() &amp;&amp; !is_home()) {
+        $content .= '
+<div class="share-this">
+                    <a href="http://twitter.com/share"
+class="twitter-share-button"
+data-count="horizontal">Tweet</a>
+                    <script type="text/javascript"
+src="http://platform.twitter.com/widgets.js"></script></p>
+<div class="facebook-share-button">
+                        <iframe
+src="http://www.facebook.com/plugins/like.php?href='.
+urlencode(get_permalink($post->ID))
+.'&amp;amp;layout=button_count&amp;amp;show_faces=false&amp;amp;width=200&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;height=21"
+scrolling="no" frameborder="0" style="border:none;
+overflow:hidden; width:200px; height:21px;"
+allowTransparency="true"></iframe>
+                    </div>
+                </div>';
+    }
+    return $content;
+}
+add_action('the_content', 'share_this');
+{% endhighlight %}
+
+
+
+<h4>Mostra quante volte un post &egrave; stato condiviso via Twitter</h4>
+<p>Inserisci all'interno del file functions.php:
+
+
+{% highlight ruby linenos %}
+function readTwitterShares($url) {
+ $s = file_get_contents("http://urls.api.twitter.com/1/urls/count.json".
+   "?callback=?&amp;url=".urlencode($url));
+   preg_match("#("count"):([0-9]*)#",$s,$ar);
+   return isset($ar[2]) ? $ar[2] : 0;
+}
+{% endhighlight %}
+
+</p>
+
+<p>Poi all'interno del post inserisci il codice php</p>
+
+{% highlight ruby linenos %}
+echo readTwitterShares(get_permalink());
+{% endhighlight %}
+</p>
+
+<h4>Disabilita automaticamente i commenti pi&ugrave; vecchi di X giorni</h4>
+<p>Se hai articoli molto vecchi sul tuo sito &egrave; possibile che parte del codice che hai inserito all'interno sia deprecato, o che in generale la notizia che riporti sia imprecisa, in questo caso conviene disabilitare i post vecchi, per farlo basta inserire come al solito il seguente codice all'interno del file functions.php . Il codice disabiliter&agrave; i commenti per gli articoli pi&ugrave; vecchi di 30 giorni, volendo &egrave; possibile aumentare o diminuire il numero al terzo rigo.
+
+
+{% highlight ruby linenos %}
+function close_comments( $posts ) {
+	if ( !is_single() ) { return $posts; }
+	if ( time() - strtotime( $posts[0]->post_date_gmt ) > ( 30 * 24 * 60 * 60 ) ) {
+		$posts[0]->comment_status = 'closed';
+		$posts[0]->ping_status    = 'closed';
+	}
+	return $posts;
+}
+add_filter( 'the_posts', 'close_comments' );
+{% endhighlight %}
+</p>
+
+
+<p>Hai altre guide o code snippet che ritieni pertinenti a quanto scritto su questo articolo?
+Commenta qui sotto o mandami una mail.</p>

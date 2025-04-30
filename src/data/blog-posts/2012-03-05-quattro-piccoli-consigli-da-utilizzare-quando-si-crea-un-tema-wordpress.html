@@ -1,0 +1,202 @@
+---
+layout: post
+status: publish
+published: true
+title: Quattro piccoli consigli da utilizzare quando si crea un tema wordpress
+date: '2012-03-05 23:05:15 +0100'
+categories:
+- Web programming
+---
+<p>Nell&rsquo;ultimo periodo mi sono dovuto confrontare con la creazione di un template wordpress (ancora in lavorazione), ho affrontato varie difficolt&agrave; ed ho pensato di comunicarvi qualche mia piacevole scoperta e qualche problema che ho risolto.</p>
+<!--more-->
+
+<h3>Header Footer Sidebar e Index</h3>
+I file di un template Wordpress sono vari, i pi&ugrave; importanti sono style.css (che contiene lo stile del sito), functions.php (che contiene le funzioni php utilizzate dal sito) e poi index.php .&nbsp;Il file <strong>index.php</strong> &egrave; quello che si apre non appena il sito &egrave; visitato, pu&ograve; essere statico o dinamico, ma visto che si pu&ograve; impostare statico dalle impostazioni wordpress ci interessa crearlo dinamico. Per una buona programmazione &egrave; consigliabile lavorare con modularit&agrave;, la pagina index pu&ograve; essere scomposta in header (la parte che sta in alto di un sito), il footer (quella che sta in basso nel sito) e la sidebar, un componente che &egrave; posizionata lateralmente al contenuto del sito. Eseguire una separazione del codice permette una gestione pi&ugrave; facile della pagina, se chiamiamo rispettivamente <em>header.php</em>, <em>footer.php </em>e <em>sidebar.php </em>i file possono essere caricati tramite delle chiamate molto semplici all&rsquo;interno del file index.php :</p>
+
+{% highlight ruby linenos %}
+<?php get_header() ?>
+<?php get_sidebar() ?>
+<?php get_footer() ?>
+{% endhighlight %}
+
+<p>in questo modo possiamo usare le stesse componenti in ogni pagina che creiamo oppure per esempio eliminare la sidebar su alcune pagine.</p>
+<p>Una cosa da fare se si usa la sidebar &egrave; accertarsi che nel file functions.php sia presente il seguente codice:</p>
+{% highlight ruby linenos %}
+if ( function_exists('register_sidebar') ) {
+register_sidebar(array(
+'name'=>'sidebar',
+'before_widget' => '',
+'after_widget' => '</li>',
+'before_title' => '',
+'after_title' => '</h3>',
+));
+}
+{% endhighlight %}
+
+<p>Una volta inserito questo codice sar&agrave; possibile inserire widget all&rsquo;interno della sidebar.</p>
+<h3>Il Loop</h3>
+Il loop &egrave; una delle funzioni pi&ugrave; interessanti, serve a stampare a video tutti i vari articoli, in base a varie caratteristiche. Questo &egrave; il codice raccomandato da wordpress.org :</p>
+
+{% highlight php linenos %}
+<!-- Start the Loop. -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- The following tests if the current post is in category 3. -->
+<!-- If it is, the div box is given the CSS class "post-cat-three". -->
+<!-- Otherwise, the div box will be given the CSS class "post". -->
+<?php if ( in_category('3') ) { ?>
+<div class="post-cat-three">
+<?php } else { ?>
+<div class="post">
+<?php } ?>
+<!-- Display the Title as a link to the Post's permalink. -->
+<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+<!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
+<small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
+<!-- Display the Post's Content in a div box. -->
+v class="entry">
+<strong><?php the_content(); ?></strong>
+</div>
+<!-- Display a comma separated list of the Post's Categories. -->
+class="postmetadata">Posted in <?php the_category(', '); ?>
+</div> <!-- closes the first div box -->
+<!-- Stop The Loop (but note the "else:" - see next line). -->
+<?php endwhile; else: ?>
+<!-- The very first "if" tested to see if there were any Posts to -->
+<!-- display.&nbsp; This "else" part tells what do if there weren't any. -->
+Sorry, no posts matched your criteria.
+<!-- REALLY stop The Loop. -->
+<?php endif; ?>
+{% endhighlight %}
+
+
+
+<p>Le righe di codice interessanti sono:</p>
+<p><strong><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?></strong></p>
+<p>Questa riga permette appunto di ciclare per tutti i risultati di un interrogazione su tutti gli articoli del sito, questa interrogazione pu&ograve; essere modificata, decidendo ad esempio di stampare solo gli articoli di un determinato autore, con una determinata caratteristica o e anche possibile scegliere quanti articoli stampare per pagina usando 
+<strong>query_posts( 'posts_per_page=7' );</strong>
+prima del while.
+</p>
+<p>
+Il comando
+{% highlight php linenos %}
+<?php the_content(); ?> 
+{% endhighlight %}
+
+</strong>mostra il contenuto di un articolo, molto probabilmente noi vorremmo solo farne vedere un anteprima, e per farlo dobbiamo sostituire questa riga con
+{% highlight php linenos %}
+<strong><?php the_excerpt(__('Read more',False));?></strong>
+{% endhighlight %}
+</p>
+
+<h3>Seo Like</h3>
+<p>Esistono molti plugin per rendere il proprio sito pi&ugrave; <strong>SeoLike</strong>, in pochi sanno per&ograve; che &egrave; possibile inserire delle ottimizzazioni all&rsquo;interno del proprio template rendendo tutto pi&ugrave; facile. Come fare? Basta inserire le seguenti righe di codice all&rsquo;interno del file functions.php :</p>
+
+{% highlight php linenos %}
+<?php
+//Ottimizzazione SEO
+function add_meta_tag(){
+global $wp_query;
+$post = $wp_query->get_queried_object();
+$desc = get_bloginfo('description');
+$KeywordsAssociated = "LE KEYWORDS DI DEFAULT";
+$keys = $KeywordsAssociated ;
+if(is_single() || is_page()){
+$desc = cut($post->post_content, 25);
+}
+if(is_single()){
+$keywords = array();
+$tags = get_the_tags($post->ID);
+$categories = get_the_category($post->ID);
+if(is_array($tags)){
+foreach ($tags as $tag)
+$keywords[] = $tag->name;
+}
+if(is_array($categories)){
+foreach ($categories as $category)
+$keywords[] = $category->cat_name;
+}
+$keys = implode(", ", $keywords);
+}
+if(is_category()){
+$desc = strip_tags(category_description());
+}
+$desc = str_replace(array("n","r","t"), " ", $desc);
+$desc = str_replace('"', "'", $desc);
+echo '<meta name="description" content="' . $desc . '" />' . "n";
+echo '<meta name="keywords" content="'. $keys . '" />' . "n";
+}
+add_action('wp_head', 'add_meta_tag');
+function cut($content, $cut = 0, $encode_html = 0) {
+if ( $cut &amp;&amp; !$encode_html )
+$encode_html = 2;
+if ( 1== $encode_html ) {
+$content = wp_specialchars($content);
+$cut = 0;
+} elseif ( 0 == $encode_html ) {
+$content = make_url_footnote($content);
+} elseif ( 2 == $encode_html ) {
+$content = strip_tags($content);
+}
+if ( $cut ) {
+$blah = explode(' ', $content);
+if ( count($blah) > $cut ) {
+$k = $cut;
+$use_dotdotdot = 1;
+} else {
+$k = count($blah);
+$use_dotdotdot = 0;
+}
+for ( $i=0; $i<$k; $i++ )
+$excerpt .= $blah[$i].' ';
+$excerpt .= ($use_dotdotdot) ? '...' : '';
+$content = $excerpt;
+}
+$content = str_replace(']]>', ']]&amp;gt;', $content);
+return $content;
+}
+?>
+{% endhighlight %}
+
+<p>dove &ldquo;LE KEYWORDS DI DEFAULT&rdquo; sono le keywords che vogliamo impostare di Default per il sito, per ogni articolo invece verr&agrave; creato un meta tag per la descrizione della pagina contenente un buon numero di parole iniziali dell&rsquo;articolo, come Keywords saranno usate le categorie e le keywords dello stesso.</p>
+<p>Per rendere il titolo del sito pi&ugrave; indicizzabile si deve sostituire il nodo &ldquo;title all&rsquo;interno dell&rsquo;&rdquo;head&rdquo; con:</p>
+
+{% highlight php linenos %}
+<title>
+<?php
+wp_title('');
+if (function_exists('is_tag') and is_tag()) { ?>
+Tag per <?php echo $tag;
+}
+if (is_archive()) { ?>
+Archivio <?php
+} elseif (is_search()) { ?>
+Ricerca per <?php echo wp_specialchars($s,1);
+}
+if ( !(is_404()) &amp;&amp; (is_search()) or (is_single()) or (is_page()) or (function_exists('is_tag') and is_tag()) or (is_archive()) ) { ?>
+| <?php
+} ?>
+<?php bloginfo('name');
+if(is_home()){ ?>
+- <?php bloginfo('description');
+}
+?>
+</title>
+{% endhighlight %}
+
+
+<h3>Codice Per numero di fans su Facebook</h3>
+Una cosa molto simpatica per un sito con una pagina facebook &egrave; pubblicare il numero di fan, non &egrave; molto difficile, basta incollare questo codice dove si vuole che appaia il numero.</p>
+
+{% highlight php linenos %}
+<?php
+$page_id = "XXXXXXXXXXXX";
+$xml = @simplexml_load_file("http://api.facebook.com/restserver.php?method=facebook.fql.query&amp;query=SELECT%20fan_count%20FROM%20page%20WHERE%20page_id=".$page_id."") or die ("a lot");
+$fans = $xml->page->fan_count;
+echo $fans;
+?>
+{% endhighlight %}
+
+<p>E sostituire il valore XXXXXXXXXXXX con il pageId della pagina facebook associata.</p>
+<h3>Dove andare da qua?</h3>
+Creare un template da zero &egrave; sicuramente difficile, richiede molto tempo ed una buona conoscenza di php e CSS oltre che le api di wordpress. Permette per&ograve; di avere un vestito fatto su misura per il proprio sito, ed &egrave; possibile anche rivenderlo a terzi. Consiglio in generale una lettura del codex di Wordpress e magari per avere qualcosa di italiano consiglio le guide di <a href="http://www.yourinspirationweb.com">yourinspirationweb</a> . Consiglio inoltre una veloce lettura anche degli snippets di wordpress che spesso contengono codice per creare qualcosa di molto carino.</p>
+<p>Per i consigli sul SEO ringrazio <strong><a href="http://danieleghidoli.it/">Daniele Ghidoli</a> </strong>di <a title="bigthink.it" href="http://www.bigthink.it/" target="_blank">bigthink.it</a></p>

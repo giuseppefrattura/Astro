@@ -1,0 +1,58 @@
+---
+layout: post
+status: publish
+published: true
+title: I comandi mkdir e history su Linux
+description: due dei comandi Linux che uso più spesso
+date: '2022-08-08 08:06:54 +0200'
+categories:
+- Varie
+tags:
+background: '/img/posts/06.jpg'
+---
+
+<p>
+  <img class="img-fluid"  alt='Tux la mascotte di Linux' src="{{ site.url }}/assets/tux.png" />
+  <div class="imgDesc">
+    Image by <a href="https://pixabay.com/users/lukrate-607309/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1531289">Boby Pogy</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1531289">Pixabay</a>
+  </div>
+  In questo breve articolo vorrei parlare di due comandi che personalmente uso molto spesso quando mi collego a macchine linux. 
+</p>
+<!--more-->
+
+
+
+<h1>mkdir</h1>
+<p>
+mkdir serve a creare cartelle al’interno del file system linux, ha tre  3 opzioni:
+<ul>
+  <li> -p - per creare più directory innestate</li>
+  <li> -v - mostra a video le informazioni sulle cartelle create</li>
+  <li> -m - da la possibilità di settare al momento della creazione i permessi della directory</li>
+</ul>
+
+<ul>
+  <li>mkdir {hello,world} creerà due cartelle</li>
+
+  <li>mkdir -p master/parent/project creerà cartelle una dentro l'altra </li>
+
+  <li>mkdir -m777 master creerà e darà i permessi 777 alla cartella master </li>
+
+  <li> mkdir -p -v -m777 master/parent/project i due comandi precedenti contemporaneamente ed in modalità <i>verbose</i> </li>.
+</ul>
+</p>
+
+<h1>history</h1>
+<p>
+history permette di avere l'elenco degli ultimi comandi utilizzati su terminale.
+
+<ul>
+  <li>history [numero] permette di avere gli ultimi [numero] comandi eseguiti</li>
+
+    <li>history -d [numero] cancella gli ultimi [numero] comandi</li>
+
+<li>history -c pulisce tutta la history</li>
+
+<li>history -w [nomefile] scrive la history su un file </li>
+  </ul>
+</p>

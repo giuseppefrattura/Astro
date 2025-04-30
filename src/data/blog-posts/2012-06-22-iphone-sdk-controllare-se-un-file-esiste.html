@@ -1,0 +1,19 @@
+---
+layout: post
+status: publish
+published: true
+title: 'iPhone SDK: Controllare se un file esiste'
+date: '2012-06-22 16:33:23 +0200'
+categories:
+- Programmazione
+tags:
+- iphone
+- ios
+comments: []
+---
+<p>Prima di provare a scrivere un file su iPhone &egrave; meglio verificare la sua esistenza, per farlo si pu&ograve; usare quest funzione:</p>
+
+{% highlight ruby linenos %}
+
+BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:imagePath];
+{% endhighlight %}
