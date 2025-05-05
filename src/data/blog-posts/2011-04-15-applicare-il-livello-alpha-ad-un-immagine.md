@@ -1,14 +1,13 @@
 ---
-slug: Applicare il livello alpha ad un immagine
+slug: applicare-il-livello-alpha-ad-un-immagine
 published: true
-title: Applicare il livello alpha ad un immagine
+title: Applicare il livello alpha ad un'immagine
 publishDate: 15 Apr 2011
-description: Procedura per applicare un livello alpha a un'immagine.
+description: Come gestire la trasparenza nelle immagini per applicazioni iOS
 ---
 
-Per un applicazione per dispositivi iOS ho dovuto effettuare dei piccolissimi ritocchi a delle foto su dispositivo. In questo breev post descrivo il procedimento per la modifica di un'immagine applicando un livello di trasparenza detto livello alpha.
+Per applicare il livello alpha ad un'immagine in un'applicazione iPhone è necessario seguire i seguenti passaggi:
 
-<!--more-->
 Ecco il codice del metodo da usare :
 
 ```ruby

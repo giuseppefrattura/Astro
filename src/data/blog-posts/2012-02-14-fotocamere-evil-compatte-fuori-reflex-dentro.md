@@ -1,7 +1,7 @@
 ---
 slug: fotocamere-evil-compatte-fuori-reflex-dentro
 published: true
-title: Fotocamere Evil: Compatte fuori, Reflex dentro
+title: Fotocamere Evil Compatte fuori, Reflex dentro
 publishDate: 14 Feb 2012
 description: Guida alla comprensione delle fotocamere mirrorless e loro caratteristiche principali
 ---
