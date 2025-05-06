@@ -12,12 +12,12 @@ Per provare del codice OpenGL su mac è possibile utilizzare Xcode, la potentiss
 
 Creare un nuovo progetto Xcode e creiamo un applicazione di tipo command line tool scegliendo come linguaggio di programmazione 'c'.
 
-![Creazione progetto Xcode]({{ site.url }}/assets/CommandLineTool.jpg)
+![Creazione progetto Xcode](../assets/CommandLineTool.jpg)
 *Crea un applicazione per Mac OsX di tipo command line tool*
 
 Nelle impostazioni del progetto andiamo su Build Phases -> Link Binary With Libraries ed aggiungiamo "openGL.framework" e "GLUT.framework".
 
-![Librerie caricate]({{ site.url }}/assets/OpenFramework.jpg)
+![Librerie caricate](../assets/OpenFramework.jpg)
 *Pagina di caricamento delle librerie*
 
 A questo punto basterà importare all'inizio del codice del main le librerie desiderate:

@@ -6,17 +6,17 @@ publishDate: 05 Jun 2018
 description: Il nuovo sistema operativo Mac Os Mojave, le principali novità
 ---
 
-![Apple Mac Os Mojave]({{ site.url }}/assets/MacOSMojave/macOS_Mojave.jpg)
+![Apple Mac Os Mojave](../assets/MacOSMojave/macOS_Mojave.jpg)
 
 Lo scorso quattro Giugno Apple ha presentato il suo nuovo sistema operativo per Mac chiamato **Mojave** al WWDC 2018. Apple ci ha abituati a nomi prima di felini e dopo di luoghi molto belli come il parco Yosemite o appunto il deserto Mojave.
 
 ### Dark Mode
-![Dark mode]({{ site.url }}/assets/MacOSMojave/dark_mode_finder.jpg)
+![Dark mode](../assets/MacOSMojave/dark_mode_finder.jpg)
 
 La dark mode permette un'esperienza desktop completamente diversa, preferendo ai tipici toni chiari, toni scuri. Tutte le app native (Mail, Messaggi, Mappe, Calendario e Foto) avranno un supporto alla dark mode.
 
 ### Nuovo Mac App Store
-![Mac App Store]({{ site.url }}/assets/MacOSMojave/Mac_App_Store.jpg)
+![Mac App Store](../assets/MacOSMojave/Mac_App_Store.jpg)
 
 Il Mac App Store è stato ridisegnato per dare un'esperienza utente simile a quella della sua versione mobile.
 
@@ -25,15 +25,15 @@ Il Mac App Store è stato ridisegnato per dare un'esperienza utente simile a que
 Se si hanno sul desktop file diversi dello stesso tipo, ad esempio immagini o fogli Excel, questi possono essere raggruppati e visti come un'unica icona in modo da mantenere il desktop più in ordine. È possibile raggruppare i file non solo per tipo ma anche per dei tag assegnati dall'utente. La finestra di anteprima (quella che appare quando si preme lo spazio su un'icona) mostrerà anche i metadati del file esaminato.
 
 ### Nuove app native
-![News]({{ site.url }}/assets/MacOSMojave/News.jpg)
+![News](../assets/MacOSMojave/News.jpg)
 
 Mac Os Mojave copia da iOS alcune app di successo come News, Stocks, Registrazioni e Casa. Tutte le app avranno le stesse funzionalità della versione mobile ma con un'interfaccia ottimizzata per l'uso di mouse e tastiera.
 
-![Home]({{ site.url }}/assets/MacOSMojave/Home.jpg)
-![Borsa]({{ site.url }}/assets/MacOSMojave/Borsa.jpg)
+![Home](../assets/MacOSMojave/Home.jpg)
+![Borsa](../assets/MacOSMojave/Borsa.jpg)
 
 ### Facetime
-![Facetime]({{ site.url }}/assets/MacOSMojave/Facetime.jpg)
+![Facetime](../assets/MacOSMojave/Facetime.jpg)
 
 Facetime permetterà di effettuare videochiamate di gruppo creando un mosaico con i video di tutti i partecipanti.
 

@@ -6,7 +6,7 @@ publishDate: 01 Jul 2018
 description: Uno dei droni più economici di DJI, punti di forza e debolezza
 ---
 
-![DJI Spark]({{ site.url }}/assets/DJI_spark.jpg)
+![DJI Spark](../assets/DJI_spark.jpg)
 
 Ho acquistato online il drone della DJI modello Spark, e ne sono rimasto entusiasta. Non sono un videomaker ma mi piace la fotografia ed il pensiero di poter fare foto e video dall'alto mi piace molto. C'è da dire che lo Spark non è il mio primo drone.
 

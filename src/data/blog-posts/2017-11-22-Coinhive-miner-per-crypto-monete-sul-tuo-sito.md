@@ -6,7 +6,7 @@ publishDate: 22 Nov 2017
 description: Utilizzare le criptovalute per guadagnare quando i visitatori accedono al tuo sito
 ---
 
-![Coinhive]({{ site.url }}/assets/coinhive.jpg)
+![Coinhive](../assets/coinhive.jpg)
 
 Un modo alternativo per guadagnare mentre gli utenti leggono il tuo sito senza disturbarli con pubblicità inutili.
 

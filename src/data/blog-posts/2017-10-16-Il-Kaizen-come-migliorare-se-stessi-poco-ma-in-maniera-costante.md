@@ -6,7 +6,7 @@ publishDate: 20 Oct 2017
 description: Kaizen è una filosofia orientale che professa un continuo e costante miglioramento
 ---
 
-![Kaizen]({{ site.url }}/assets/aaron-burden-kaizen.jpg)
+![Kaizen](../assets/aaron-burden-kaizen.jpg)
 
 Da anni ormai studio e sono interessato al miglioramento personale, in particolare leggo libri e vedo video su quest'argomento. Tra gli autori più importanti ci sono Tony Robins e il suo allievo italiano Roberto Re ma anche Tim Ferris e altri che trovo nella rete.
 

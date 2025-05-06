@@ -6,7 +6,7 @@ publishDate: 11 Jul 2017
 description: Una riflessione personale sulla libertà di espressione e il rispetto delle opinioni
 ---
 
-![Libertà di parola]({{ site.url }}/assets/liberta_di_parola.jpg)
+![Libertà di parola](../assets/liberta_di_parola.jpg)
 
 In questo post vorrei fare una mia riflessione personale su cosa sia la libertà di parola, sul perché credo che questa vada sempre rispettata anche e soprattutto quando chi parla non la pensa come noi. Un argomento sempre più trattato su internet ed anche una delle tante libertà che abbiamo in Italia e che in tanti altri paesi purtroppo non esiste.
 

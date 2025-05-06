@@ -10,13 +10,13 @@ Da Gearbest ho acquistato una nuova cineseria, un kit per ricaricare wireless l'
 
 Il kit consiste in due pezzi: il primo è la base di ricarica che funziona con un qualsiasi cavo USB-c; il secondo componente va inserito sull'iPhone con il connettore lightning e può essere tenuto fermo da una cover non troppo spessa (io uso una in silicone molto sottile).
 
-![Wireless charger case]({{ site.url }}/assets/WirelessCharger/1.jpg)
+![Wireless charger case](../assets/WirelessCharger/1.jpg)
 
 ### Vantaggi e svantaggi
 
 Parliamoci chiaramente non è un dispositivo che ti cambia la vita ma qualche piccola comodità la offre. In particolare per caricare il cellulare basta poggiarlo sulla base e niente più, il difetto è che una volta collegato il chip all'iPhone non è possibile collegarlo al pc per scambio dati o sincronizzazione ma è necessario effettuare la sincronizzazione via WiFi.
 
-![Wireless charger open]({{ site.url }}/assets/WirelessCharger/2.jpg)
-![Wireless charger detail]({{ site.url }}/assets/WirelessCharger/3.jpg)
+![Wireless charger open](../assets/WirelessCharger/2.jpg)
+![Wireless charger detail](../assets/WirelessCharger/3.jpg)
 
 Se sei interessato trovi il caricatore wireless per iPhone [qui](http://www.gearbest.com/power-banks/pp_426411.html?lkid=10208339)

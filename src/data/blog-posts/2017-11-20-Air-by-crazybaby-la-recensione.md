@@ -6,7 +6,7 @@ publishDate: 20 Nov 2017
 description: Le nuove auricolari bluetooth di Crazybaby, le air
 ---
 
-![Air by crazybaby]({{ site.url }}/assets/air-crazybaby.jpg)
+![Air by crazybaby](../assets/air-crazybaby.jpg)
 
 Seguo molti progetti su kickstarter, uno che mi ha convinto abbastanza da spenderci dei soldi è stato quello delle auricolari Air di Crazybaby. Si tratta di auricolari wireless bluetooth molto piccole da inserire all'interno dell'orecchio, simili come idea alle Ear Pods di Apple.
 

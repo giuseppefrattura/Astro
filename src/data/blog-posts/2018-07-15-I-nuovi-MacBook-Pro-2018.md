@@ -6,7 +6,7 @@ publishDate: 15 Jul 2018
 description: Apple presenta i nuovi MacBook Pro con processori Intel di ottava generazione
 ---
 
-![MacBook Pro 2018]({{ site.url }}/assets/MacBookPro2018/Apple_MacBook_Pro_update_13in_15.jpg)
+![MacBook Pro 2018](../assets/MacBookPro2018/Apple_MacBook_Pro_update_13in_15.jpg)
 
 Apple ha da poco presentato la nuova linea di MacBook pro da 13 e 15 pollici con touchbar del 2018 sul suo sito. Le novità sono secondo me veramente poche ma di sostanza, eccovene un elenco.
 
@@ -16,7 +16,7 @@ Apple ha da poco presentato la nuova linea di MacBook pro da 13 e 15 pollici con
 
 Apple ha finalmente iniziato ad usare le CPU intel di ottava generazione, queste nuove CPU hanno lasciato quasi invariata la potenza per singolo core ma ne hanno aumentato il numero per processore. Le CPU usate nei 13" sono sempre state i modelli Ultra Low Voltage di Intel che consentono basse performance e che fino alla settima generazione erano solo dual core (con due core fisici), il loro codice finisce con la lettera U. Dalla ottava sono arrivati anche dei modelli quad core, con quattro core fisici, che portano un netto miglioramento nel multitasking. Per quanto riguarda i modelli 15" monteranno come sempre i processori mobile di Intel più performanti, i7 ed i9 con sei core fisici, il modello i9 è il top di gamma Intel per processori mobile [8950HK](https://ark.intel.com/products/134903/Intel-Core-i9-8950HK-Processor-12M-Cache-up-to-4_80-GHz).
 
-![MacBook Pro 2018 coding]({{ site.url }}/assets/MacBookPro2018/Apple_MacBook_Pro_Update_developers_coding.jpg)
+![MacBook Pro 2018 coding](../assets/MacBookPro2018/Apple_MacBook_Pro_Update_developers_coding.jpg)
 
 ### La RAM
 
@@ -34,7 +34,7 @@ Il chip T2 è l'evoluzione del Chip presente nel iMac Pro e permette una maggior
 
 Anche i display hanno avuto dei miglioramenti, la risoluzione è invariata ma è stata aumentata la gamma colori allo standard P3. C'è anche una nuova feature chiamata True Tone che regola in automatico il bilanciamento del bianco in base alla luce esterna.
 
-![MacBook Pro 2018 display]({{ site.url }}/assets/MacBookPro2018/Apple_macbook_pro_update_True_Tone_Technology.jpg)
+![MacBook Pro 2018 display](../assets/MacBookPro2018/Apple_macbook_pro_update_True_Tone_Technology.jpg)
 
 ### SSD
 
@@ -46,7 +46,7 @@ Qui c'è una nota da fare, su internet c'è chi si stupisce del costo della conf
 
 Come accessori Apple ha anche presentato una nuova custodia molto sottile ed elegante in pelle per il MacBook da 13" e 15". Entrambe sono disponibili in tre colori: Blu notte, cuoio e nero.
 
-![MacBook Pro 2018 custodie]({{ site.url }}/assets/MacBookPro2018/New_Apple_MacBook_Pro_Leather_Sleeves.jpg)
+![MacBook Pro 2018 custodie](../assets/MacBookPro2018/New_Apple_MacBook_Pro_Leather_Sleeves.jpg)
 
 Oltre a questo è stata presentata una eGpu creata in collaborazione con Blackmagic con all'interno una Radeon Pro 580 con 8GB di GDDR5.
 

@@ -6,7 +6,7 @@ publishDate: 28 Nov 2016
 description: Recensione della mirrorless medio formato Hasselblad X1D
 ---
 
-![Hasselblad X1D]({{ site.url }}/assets/Hasselblad_X1D/Hasselblad_X1D.jpg)
+![Hasselblad X1D](../assets/Hasselblad_X1D/Hasselblad_X1D.jpg)
 
 Grazie agli amici di [NewOldCamera](http://www.newoldcamera.it) di Milano ho avuto la possibilità di provare per un'ora la Hasselblad X1D, una mirrorless Medio Formato dal valore superiore ai diecimila euro.
 
@@ -26,7 +26,7 @@ Nella fotocamera è possibile inserire due memory card SD, dal menu è possibile
 L'interfaccia della fotocamera è molto semplice ed essenziale, funziona tutto tramite un display touch screen dove è possibile selezionare le varie impostazioni della macchina, è poi presente la classica corona in alto sulla destra, estraibile, che consente di cambiare le modalità di scatto della macchina fotografica.
 
 Nonostante le dimensioni ed il peso la macchina ha un ottimo grip, risulta molto comoda anche dopo un'ora di utilizzo costante.
-![Hasselblad X1D]({{ site.url }}/assets/Hasselblad_X1D/Hasselblad_X1D_1.jpg)
+![Hasselblad X1D](../assets/Hasselblad_X1D/Hasselblad_X1D_1.jpg)
 
 ### La mia opinione
 

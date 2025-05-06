@@ -59,4 +59,4 @@ Nel Main creo la finestra, dichiaro il suo nome le sue dimensioni, dove deve ess
 
 Ecco il risultato:
 
-![Cerchio OpenGL]({{ site.url }}/assets/cerchio.jpg)
+![Cerchio OpenGL](../assets/cerchio.jpg)

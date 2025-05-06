@@ -6,11 +6,9 @@ publishDate: 01 Apr 2021
 description: Nuovi modi di pagare senza usare i contanti
 ---
 
-![Satispay](/assets/satispay.webp)
+![Satispay](../assets/satispay.webp)
 
 Benvenuti nel nuovo millennio, da vent'anni. In quest'articolo vorrei parlare di tutte le app che conosco ed utilizzo per i pagamenti online e per la gestione finanziaria in genere.
-
-<!--more-->
 
 Passeggiando per Milano una sera sentii chiaramente dei ragazzi uscire da un ristorante discutendo sul modo di dividersi il conto tra banconote e monetine. Sicuramente deve esistere un modo migliore per gestire queste situazioni! Eppure è strano che ragazzi possessori di smartphone, connessi ad internet per la maggior parte delle loro giornate non utilizzino metodi di pagamento smart.
 
@@ -27,7 +25,7 @@ Se non l'hai già scarica Satispay da Apple Store o Play Store sul tuo smartPhon
 Revolut è un servizio differente, ti offre un conto virtuale con una carta fisica che si può usare per acquisti online. Offre in particolare la possibilità di cambiare al momento la valuta con la quale si paga ed avere un tasso di cambio migliore. E' possibile ricevere ed inviare bonifici ( istantanei ) o semplicemente scambiare denaro con altri amici che hanno Revolut. Con Revolut si possono anche avere delle carte virtuali per fare ad esempio dei singoli pagamenti oppure acquistare criptovalute. Revolut ha poi dei servizi a pagamento aggiuntivi che comprendono i bonifici esteri, un cashback fino all'1%, Revolut junior che sono carte e conti da dare idealmente ai propri figli tenendo il loto conto sotto controllo, e la possibilità di prelevare contanti dal bancomat. L'utilizzo base di Revolut è comunque gratuito.
 
 [Se sei interessato ad accedere ai servizi di Revolut clicca qui.](https://revolut.com/referral/giusepfac!ASO)
-![Revolut](/assets/revolut.png)
+![Revolut](../assets/revolut.png)
 
 ### Hype
 

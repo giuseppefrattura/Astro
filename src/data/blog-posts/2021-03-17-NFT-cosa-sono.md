@@ -8,8 +8,6 @@ description: I non-fungible token ed il loro utilizzo nel mondo dell'arte
 
 Gli NFT sono diventati negli ultimi giorni argomento di interesse sia per gli artisti che i tecnici. Gli artisti provano a vendere opere d'arte digitale mentre i tecnici sono affascinati da come questi siano sofisticati ed al contempo facili da usere. In questo articolo proverò in maniera semplice a spiegare esattamente cosa sono gli NFT e perché possono cambiare l'idea che abbiamo di una galleria d'arte.
 
-<!--more-->
-
 ### Definizione
 
 Un **token non fungibile** (non-fungible token, o NFT) è un tipo speciale di token crittografico che rappresenta qualcosa di unico; i gettoni non fungibili non sono quindi reciprocamente intercambiabili. Ciò è in contrasto con le criptovalute, come bitcoin e molti token di rete o di utilità, che sono per loro stessa natura fungibili.

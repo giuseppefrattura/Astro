@@ -26,7 +26,7 @@ Pebble è disponibile in varie versioni, la prima chiamata "Pebble Classic" e la
 
 Una delle feature sulla quali i progettisti di Pebble hanno e stanno spingendo molto è la possibilità di creare non solo applicazioni ma anche dispositivi fisici per il pebble, in particolare cinturini che ne aumentino le caratteristiche, come la ricarica della batteria con energia solare o un sensore biometrico del battito cardiaco o ancora un ricevitore GPS.
 
-![Pebble]({{ site.url }}/assets/Pebble.png)
+![Pebble](../assets/Pebble.png)
 
 Per quanto rimanga al momento uno dei miei smartwatch preferiti non credo che il settore sia maturo, in particolare non credo che i pochi benefici che porti uno smartwartch siano essenziali o migliorino la qualità della vita. Ricevere una notifica, la funzione sveglia o quella dettatura sono funzioni gemelle a quelle del proprio smartphone, questo trasforma ogni smartwatch in un semplice secondo display per il proprio iPhone o device Android. Per l'effettiva riuscita del prodotto c'è bisogno di una killer feature non presente su smartphone.
 

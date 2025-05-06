@@ -11,7 +11,7 @@ Propongo un elenco delle principali novità dell'ultima versione di Wordpress, l
 <!--more-->
 
 ### 1 - Nuovo Tema
-![Twenty Thirteen]({{ site.url }}/assets/TwentyThirteen.png)
+![Twenty Thirteen](../assets/TwentyThirteen.png)
 
 Twenty Thirteen il nuovo tema di Wordpress 3.6
 
@@ -22,12 +22,12 @@ Il nuovo tema di default di Wordpress 3.6 si chiama Twenty Thirteen tra le sue n
 - Completamente responsive
 
 ### 2 - Post Formats
-![Nuova interfaccia dei Post Format]({{ site.url }}/assets/EditPost.png)
+![Nuova interfaccia dei Post Format](../assets/EditPost.png)
 
 WordPress supporta i post format dalla versione 3.1 ma nella 3.6 è stata aggiornata l'interfaccia grafica relativa al loro utilizzo.
 
 ### 3 - Post Revisions
-![Post Revision in Wordpress 3.6]({{ site.url }}/assets/Post-Revision.png)
+![Post Revision in Wordpress 3.6](../assets/Post-Revision.png)
 
 Anche le Post Revisions sono da tempo parte integrante della parte amministrativa di wordpress ed in questa nuova versione è stata migliorata la loro interfaccia grafica in modo da facilitarne l'utilizzo. I cambiamenti saranno evidenziati tramite la colorazione del testo.
 

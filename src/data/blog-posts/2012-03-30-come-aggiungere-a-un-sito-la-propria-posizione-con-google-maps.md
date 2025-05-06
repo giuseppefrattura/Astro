@@ -14,8 +14,8 @@ Iniziamo a dire che è molto semplice, si tratta infatti di un semplice copia e 
 
 Ora passiamo alla parte finale, per avere il codice da copiare bisogna andare nella parte sinistra e cliccare sul simbolo della catena in alto, non selezionate il primo campo che serve per inviare a terzi la mappa con la posizione che avete selezionato, ma copiate il secondo campo, un iframe.
 
-![mappa]({{ site.url }}/assets/mappa.jpg)
+![mappa](../assets/mappa.jpg)
 
 Incollate il codice nella pagina che preferite ed il gioco è fatto! Potete anche cambiare la grandezza della mappa cliccando sul link in basso al box dove avete preso il codice.
 
-![Personalizzata]({{ site.url }}/assets/Personalizzata.jpg)
+![Personalizzata](../assets/Personalizzata.jpg)

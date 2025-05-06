@@ -20,6 +20,6 @@ sudo apt-get update
 sudo apt-get install variety
 ```
 
-![Variety]({{ site.url }}/assets/variety.png)
+![Variety](../assets/variety.png)
 
 Una volta inserita la password sarà possibile lanciare l'applicazione dal menu applicazioni. Al primo avvio chiederà quali fonti usare per i propri sfondi, e la periodicità con la quale cambiare sfondo.

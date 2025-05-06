@@ -6,7 +6,7 @@ publishDate: 23 Jan 2018
 description: Intel ha unito le sue CPU e le schede grafiche AMD Radeon RX Vega
 ---
 
-![Intel core e AMD Radeon RX Vega M Graphics]({{ site.url }}/assets/intel8/Intel-8th-Generation-Core-Processors-With-AMD-Radeon-RX-Vega-M-Graphics.png)
+![Intel core e AMD Radeon RX Vega M Graphics](../assets/intel8/Intel-8th-Generation-Core-Processors-With-AMD-Radeon-RX-Vega-M-Graphics.png)
 
 Intel ha unito le sue CPU ad alte prestazioni con una potente GPU discreta di AMD e l'ultima generazione di memorie ad alta larghezza di banda (HBM2), tutti interconnessi con il loro ultimo ponte di interconnessione multi-die incorporato o EMIB.
 
@@ -18,7 +18,7 @@ Intel garantisce il supporto all'overclock. I vari SKU saranno configurati in va
 
 GPU e HBM2 sono collegate direttamente tramite EMIB mentre la CPU è collegata alla GPU tramite PCI Express Gen 3 che dovrebbe fornire il throughput necessario per alimentare carichi di lavoro grafici intensivi.
 
-![Specifiche architettura Intel core e AMD Radeon RX Vega M Graphics]({{ site.url }}/assets/intel8/Intel-8th-Generation-Core-Processors-With-AMD-Radeon-RX-Vega-M-Graphics-Specs.png)
+![Specifiche architettura Intel core e AMD Radeon RX Vega M Graphics](../assets/intel8/Intel-8th-Generation-Core-Processors-With-AMD-Radeon-RX-Vega-M-Graphics-Specs.png)
 
 La funzionalità di condivisione dinamica dell'energia è una delle caratteristiche più interessanti. CPU e GPU condividere e bilanciano l'energia in base al carico di lavoro dell'applicazione. Quando al sistema operativo serve maggiormente l'utilizzo della scheda grafica (come ad esempio nei giochi) a questa sono destinate più risorse, mentre durante il multi-tasking, questa potenza è data alla CPU.
 
@@ -32,6 +32,6 @@ Entrambe le schede grafiche hanno 4 GB di memoria HBM2.
 
 I processori Intel di ottava generazione con grafica Radeon RX Vega M arriveranno nella primavera del 2018. Intel ha dichiarato che questi dispositivi non saranno solo per sistemi portatili ma anche per PC di dimensioni ridotte come i NUC di Intel.
 
-![Benchmark Intel core e AMD Radeon RX Vega M Graphics]({{ site.url }}/assets/intel8/Intel-8th-Generation-Core-Processors-With-AMD-Radeon-RX-Vega-M-Graphics-Benchmark.png)
+![Benchmark Intel core e AMD Radeon RX Vega M Graphics](../assets/intel8/Intel-8th-Generation-Core-Processors-With-AMD-Radeon-RX-Vega-M-Graphics-Benchmark.png)
 
 Le prestazioni dovrebbero essere leggermente superiori ad un processore intel di settima generazione con una scheda grafica nvidia 1060. Questi processori con scheda grafica dedicata potrebbero essere usati anche nei prossimi macbook pro, resta da vedere se solo nei modelli da 15 pollici o anche nei più piccoli.

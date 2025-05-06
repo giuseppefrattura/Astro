@@ -6,7 +6,7 @@ publishDate: 03 Oct 2019
 description: La nuova action cam di GoPro con mount innovativa
 ---
 
-![GoPro Hero 8]({{ site.url }}/assets/GoPro8.jpg)
+![GoPro Hero 8](../assets/GoPro8.jpg)
 
 Dopo più di un anno dall'annuncio della Hero 7 GoPro ha annunciato la nuova versione della sua action cam. Il grosso problema è l'entrata in scena dell'action cam di DJI qualitativamente ad un livello molto simile se non superiore e con un prezzo più basso.
 

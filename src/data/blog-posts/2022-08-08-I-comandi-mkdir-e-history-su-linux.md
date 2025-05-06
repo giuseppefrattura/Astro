@@ -6,7 +6,7 @@ publishDate: 08 Aug 2022
 description: Guida ai comandi Linux mkdir e history per gestire directory e cronologia
 ---
 
-![Tux la mascotte di Linux](/assets/tux.png)
+![Tux la mascotte di Linux](../assets/tux.png)
 
 *Image by [Boby Pogy](https://pixabay.com/users/lukrate-607309/) from [Pixabay](https://pixabay.com)*
 

@@ -6,7 +6,7 @@ publishDate: 05 Dic 2016
 description: Sistema di sorveglianza domestica senza fili di FAAC
 ---
 
-![Faac Logo]({{ site.url }}/assets/Faac/Logo-Faac-Simply-Automatic.jpg)
+![Faac Logo](../assets/Faac/Logo-Faac-Simply-Automatic.jpg)
 
 FAAC Home Lock, Faac è un'azienda italiana che si occupa di sistemi di sicurezza con sede a Bologna e da poco ha lanciato un nuovo prodotto del quale vorrei parlare perché ritengo molto interessante.
 
@@ -18,7 +18,7 @@ A differenza di molti sistemi di sicurezza wireless il **segnale è bidirezional
 
 Il sistema centrale ha un comunicatore telefonico (PSTN o GSM) che gli consente di comunicare con l'esterno in maniera indipendente da una connessione internet. E' possibile inoltre verificare lo stato dell'allarme tramite SMS e la sua attivazione.
 
-![Faac system]({{ site.url }}/assets/Faac/Kit-Home-Lock.jpg)
+![Faac system](../assets/Faac/Kit-Home-Lock.jpg)
 
 Un'altra particolarità del sistema di allarme è la sua modularità, è infatti possibile aggiungere dei componenti per aumentare la sicurezza della propria casa. I componenti possono essere sensori di vetri rotti, rilevatori di fumo o sensori di movimento interni ed esterni.
 

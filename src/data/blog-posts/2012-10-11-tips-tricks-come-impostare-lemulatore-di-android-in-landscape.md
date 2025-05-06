@@ -12,10 +12,10 @@ Per un progetto universitario mi tocca sviluppare un app Android, con un modello
 
 Quando si lancia tramite Eclipse l'emulatore Android è sempre in modalità orizzontale
 
-![Verticale]({{ site.url }}/assets/AndroidEmulatorVertical.jpg)
+![Verticale](../assets/AndroidEmulatorVertical.jpg)
 *L'emulatore Android nella sua posizione standard, verticale*
 
 Premendo la combinazione di tasti Control + F11 (con l'aggiunta di Fn se si usa un Mac), ed ecco il risultato
 
-![Landscape]({{ site.url }}/assets/AndroidEmulatorHorizontal.jpg)
+![Landscape](../assets/AndroidEmulatorHorizontal.jpg)
 *L'emulatore una volta impostato in modalità landscape*

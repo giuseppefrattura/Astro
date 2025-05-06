@@ -6,7 +6,7 @@ publishDate: 17 Aug 2017
 description: Come investire e guadagnare con le criptovalute in modo sicuro
 ---
 
-![Bitcoin]({{ site.url }}/assets/bitcoin.jpg)
+![Bitcoin](../assets/bitcoin.jpg)
 
 Mentre sto scrivendo quest'articolo il valore dei bitcoin ha superato i tremila ( 3000 ) euro l'uno e si avvicina molto velocemente ai quattromila.
 Un successo dovuto dall'incertezza di alcuni mercati finanziari e dal numero sempre maggiore di persone che ne parla.

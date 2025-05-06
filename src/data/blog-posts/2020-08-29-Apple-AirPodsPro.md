@@ -6,7 +6,7 @@ publishDate: 29 Aug 2020
 description: Recensione completa delle AirPods Pro di Apple dopo mesi di utilizzo
 ---
 
-![Apple Airpods Pro]({{ site.url }}/assets/airpodsPro/airpodsprocopertina.jpg)
+![Apple Airpods Pro](../assets/airpodsPro/airpodsprocopertina.jpg)
 *Photo by Isaac Smith on Unsplash*
 
 Uscite ormai da diversi mesi le auricolari di Apple hanno fatto parlare molto di loro per via del prezzo molto alto rispetto le competitors e del design. In questo articolo ti descrivo brevemente perché ho deciso di acquistarle e come mi ci sto trovando ormai da diversi mesi.
@@ -14,7 +14,7 @@ Uscite ormai da diversi mesi le auricolari di Apple hanno fatto parlare molto di
 ### Qualità audio
 La qualità audio è buona, non stupisce ma comunque è più che sufficiente visto le dimensioni degli auricolari. Non hanno bassi particolarmente forti ma questo è dovuto al tipo di auricolare. I medi sono secondo me buono così come gli alti.
 
-![Apple Airpods Pro]({{ site.url }}/assets/airpodsPro/airpodsProsfondochiaro.jpg)
+![Apple Airpods Pro](../assets/airpodsPro/airpodsProsfondochiaro.jpg)
 *Photo by Andres Jasso on Unsplash*
 
 ### Durata batteria

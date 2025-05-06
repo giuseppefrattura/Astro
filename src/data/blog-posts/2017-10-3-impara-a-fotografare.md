@@ -6,7 +6,7 @@ publishDate: 03 Oct 2017
 description: Bisogna imparare a difendersi dal marketing delle aziende produttrici di macchine fotografiche
 ---
 
-![Nikon D850]({{ site.url }}/assets/nikon_D850.png)
+![Nikon D850](../assets/nikon_D850.png)
 
 Da poco è uscita la nuova ammiraglia Nikon, la D850 che promette scatti incredibili anche di notte, risoluzione di 45 MegaPixel, possibilità di fare dei video Timelapse in 8K, video in 4K insomma di tutto di più. Le case produttrici di macchine fotografiche creano sempre nuovi modelli migliorando sempre, rendendo obsoleti i modelli vecchi e facendo credere i molti amatori che sia necessario sostituire la propria camera.
 

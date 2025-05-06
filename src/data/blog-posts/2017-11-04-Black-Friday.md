@@ -6,7 +6,7 @@ publishDate: 04 Nov 2017
 description: In cosa consiste il Black Friday, il Cyber Monday ed il giorno dei single
 ---
 
-![Black Friday]({{ site.url }}/assets/blackFriday.jpg)
+![Black Friday](../assets/blackFriday.jpg)
 
 A novembre si parla sempre di Black Friday, Cyber monday e il giorno dei single ma cosa sono esattamente?
 

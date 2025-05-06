@@ -6,7 +6,7 @@ publishDate: 10 Sep 2022
 description: Analisi delle novità presentate da Apple nell'evento di Settembre 2022
 ---
 
-![iPhone 14 Pro](/assets/iPhone14/Apple-iPhone-14-Pro.jpg)
+![iPhone 14 Pro](../assets/iPhone14/Apple-iPhone-14-Pro.jpg)
 
 L'evento del 7 Settembre di Apple ha mostrato i nuovi prodotti della mela tra cui l'iPhone 14, il 14 Pro, i nuovi Apple Watch e le nuove Airpods Pro. Se per le specifiche tecniche non c'è niente di particolarmente innovativo per quanto riguarda l'attenzione alla sicurezza e alla salute invece cambia molto.
 
@@ -14,13 +14,13 @@ Sono anni ormai che le innovazioni dal punto di vista hardware di Apple per i pr
 
 ### Crash detection
 
-![Crash detection su iPhone 14](/assets/iPhone14/Crash-Detection.jpg)
+![Crash detection su iPhone 14](../assets/iPhone14/Crash-Detection.jpg)
 
 Un terzo della presentazione infatti verte su **Rilevamento incidenti**. In una lunga sequenza video viene mostrato come i nuovi prodotti della mela siano in effetti in grado di rilevare un incidente automobilistico e chiamare automaticamente dopo pochi secondi i soccorsi.
 
 ### SOS emergenze via satellite
 
-![Allert SOS via satellite](/assets/iPhone14/Emergency-SOS.jpg)
+![Allert SOS via satellite](../assets/iPhone14/Emergency-SOS.jpg)
 
 Altra nuova possibilità è quella in caso di problemi, in luoghi dove non c'è campo, di inviare messaggi di aiuto via satellite. Come viene spiegato nella presentazione i cellulari satellitari esistono da anni ma sono dotati di un'antenna molto grande, oltre questo problema di natura estetico ce n'è anche un altro di cui non si parla nella presentazione.
 

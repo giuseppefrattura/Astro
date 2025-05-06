@@ -6,7 +6,7 @@ publishDate: 06 May 2018
 description: Per rafforzare la propria presenza sui social è utile usare dei tool
 ---
 
-![Photo by NordWood Themes on Unsplash]({{ site.url }}/assets/nordwood-themes-359015-unsplash.jpg)
+![Photo by NordWood Themes on Unsplash](../assets/nordwood-themes-359015-unsplash.jpg)
 
 Da quando c'è stato il boom di Facebook tutti o quasi tutti abbiamo uno o più social network, per ragioni di tempo, di utilizzo e di moda ne utilizziamo alcuni più di altri. In questo articolo ti mostro qualche applicazione gratis o freemium che uso e che ti permetterà di essere presente su più social in meno tempo.
 
