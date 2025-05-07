@@ -1,20 +1,33 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { paginate } from 'astro:actions'
 
 const title = 'Blog';
 const description = 'Latest articles.';
 const permalink = `${Astro.site.href}blog`;
 
 let allPosts = await getCollection('posts')
+
 allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
+
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await getCollection('posts')
+  allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
+  return paginate(allPosts, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink} current="blog">
   <div class="container">
     <h1>Blog</h1>
-    {allPosts.map((post, index) => {
+    {page.data.map((post, index) => {
       const href = `/blog/${post.data.slug}`;
+      // Determine if this is the first post to skip the hr
+      const isFirstPost = index === 0;
+
       return (
         <div>
           { index !== 0 && <hr /> }
@@ -30,6 +43,16 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
         </div>
       )
     })}
+
+    <div class="pagination">
+      {
+        page.url.prev ? <a href={page.url.prev}>Previous Page</a> : null
+      }
+      {
+        page.url.next ? <a href={page.url.next}>Next Page</a> : null
+      }
+    </div>
+
   </div>
 </BaseLayout>
 
@@ -50,4 +73,13 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
   hr {
     margin: 60px auto;
   }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+  }
+
 </style>
