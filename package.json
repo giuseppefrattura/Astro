@@ -1,5 +1,5 @@
 {
-  "name": "GiuseppeFrattura",
+  "name": "giuseppefrattura",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.2.0",
     "@astrojs/svelte": "^7.0.10",
-    "astro": "^5.5.2",
+    "astro": "^5.7.11",
     "reading-time": "^1.5.0",
     "rehype-external-links": "^3.0.0",
     "remark-gfm": "^4.0.0",
