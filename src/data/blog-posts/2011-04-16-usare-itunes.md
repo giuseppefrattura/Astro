@@ -3,25 +3,99 @@ slug: usare-itunes
 published: true
 title: Usare iTunes
 publishDate: 16 Apr 2011
-description: Guida per gestire la musica su dispositivi Apple con iTunes.
+description: Guida pratica all'utilizzo di iTunes per gestire la propria libreria musicale
 ---
-<p>iTunes &egrave; un programma per la gestione della musica creato da Apple. E' inoltre l'unico software utilizzabile per caricare musica su iPhone, iPod ed iPad.
-Ci sono fondamentalmente due metodi per passare musica su uno di questi dispositivi: sincronizzazione automatica o gestione manuale.
-</p>
+
+iTunes è uno strumento potente per gestire la propria libreria musicale. Vediamo come utilizzarlo al meglio.
+
 <!--more-->
-<p>
-La gestione manuale &egrave; quella in genere pi&ugrave; utilizzata perch&egrave; permette di scegliere quali pezzi della libreria inserire nel dispositivo.</p>
-<p>
-La sincronizzazione automatica &egrave; un p&ograve; diversa, se non viene regolata in modo particolare riempie il dispositivo con musica a caso presa dalla libreria finquando la memoria del dispositivo non &egrave; piena.</p>
 
-<p>
-Ritengo che i metodi sopra citati siano molto scomodi da usare, proprio per questo ho deciso di usare sul mio iPhone la sincronizzazione automatica ma solo di una o pi&ugrave; playlist che io stesso creo.</p>
+### Organizzare la libreria
 
-<h3>Cosa ho fatto:</h3>
-<p>
-1) Ho creato una playlist chiamandola iPhone, e ci ho inserito le canzoni che volevo sentire.<br />
-2) Collegato l'iPhone al PC ho attivato la sincronizzazione automatica della musica ma non su tutta la libreria musicale, ma solo sulla playlist.</p>
-<h3>Quali sono i vantaggi di questa scelta?</h3>
-<p>1) Spesso capita di sentire un p&ograve; di musica su itunes, se una canzone mi piace e la voglio passare su iPhone, basta che la inserisco nella playlist e se in un secondo momento collego l'iPhone al PC itunes la sincronizzer&agrave; automaticamente.</p>
-<p>2) Se vogliocancellare una canzone la elimino dalla playlist.</p>
-<p>3) iTunes supporta le playlist smart, ovvero create in base alle caratteristiche dei brani. Ad esempio voglio caricare tutti i pezzi che ho sentito almeno 5 volte, oppure quelli che non ho mai sentito, tutti quelli di Sting oppure ancora tutti queli che hanno un determinato bitrate.</p>
+Consigli base:
+- Mantieni ordine nei file
+- Usa tag corretti
+- Crea playlist smart
+- Gestisci duplicati
+- Backup regolari
+
+### Gestione tag
+
+Informazioni importanti:
+1. Titolo corretto
+2. Artista completo
+3. Album originale
+4. Anno di uscita
+5. Genere appropriato
+
+### Smart Playlist
+
+Esempi utili:
+- Brani più ascoltati
+- Aggiunti di recente
+- Mai ascoltati
+- Preferiti
+- Per genere
+
+### Sincronizzazione
+
+Dispositivi supportati:
+- iPhone
+- iPad
+- iPod
+- Apple TV
+- AirPlay devices
+
+### Backup
+
+Proteggere la libreria:
+- Backup automatici
+- Export playlists
+- Salva su disco esterno
+- Cloud backup
+- Time Machine
+
+### Importazione
+
+Formati supportati:
+- MP3
+- AAC
+- WAV
+- AIFF
+- Apple Lossless
+
+### Store e acquisti
+
+Gestione contenuti:
+- Acquisti precedenti
+- Download automatici
+- Contenuti famiglia
+- Gift cards
+- Abbonamenti
+
+### Condivisione
+
+Opzioni disponibili:
+- Home Sharing
+- Network streaming
+- Family Sharing
+- AirPlay
+- Remote control
+
+### Tips & Tricks
+
+Suggerimenti utili:
+1. Scorciatoie tastiera
+2. Mini player
+3. Visualizzazioni multiple
+4. Equalizzatore
+5. Crossfade
+
+### Conclusioni
+
+Per un uso efficace:
+- Organizza regolarmente
+- Mantieni backup
+- Usa smart playlists
+- Aggiorna software
+- Esplora funzionalità

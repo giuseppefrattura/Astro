@@ -1,22 +1,92 @@
 ---
-slug: testare-le-proprie-applicazioni-su-iphone-senza-essere-developer
+slug: testare-app-iphone-senza-developer
 published: true
 title: Testare le proprie applicazioni su iPhone senza essere developer
 publishDate: 15 Apr 2011
-description: Guida per testare app su iPhone senza account developer Apple.
+description: Come testare app iOS senza account sviluppatore a pagamento
 ---
 
+È possibile testare le proprie applicazioni iOS sul dispositivo anche senza un account sviluppatore a pagamento. Vediamo come fare.
 
-Per poter testare le proprie applicazioni sul proprio iPhone o iDevice in generale bisogna essere developer Apple per iOS, questa operazione costa circa 70&euro; all&rsquo;anno.
-  <!--more-->
-<p>
-Per chi per&ograve; vuole solo giocare con le proprie applicazioni o le vuole finire prima di iscriversi come developer c&rsquo;&egrave; qualche possibilit&agrave;.</p>
-<p>Per prima cosa bisogna avere un iPhone (o un iPad/iPod) con il Jailbreak ed aver installato AppSync. Attenzione Appsync &egrave; solitamente usato per installare applicazioni pirata, per questo non spiego come installarlo, non &egrave; di per se illegale e su internet si trovano molte guide.</p>
-<p>Il secondo passo &egrave; di settare Xcode:<br />
+<!--more-->
 
-andate su <strong>/developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS[VERSIONE].sdk</strong><br />
-dove Versione &egrave; la versione del firmware che intendete usare (solitamente l&rsquo;ultima..).<br />
-Aperto il file <strong>SDKSettings.plist</strong> settate il campo <strong>CODE_SIGN_REQUIRED</strong> da YES a NO, poi salvate autenticandovi come amministratori.</p>
+### Prerequisiti
 
-<p>Fatto questo aprite Xcode ed andate nelle impostazioni del progetto, cercate il campo &ldquo;<strong>Code Sign Identity</strong>&rdquo; ed impostate &ldquo;<strong>don&rsquo;t code sign</strong>&rdquo;.</p>
-<p>Provate a lanciare il progetto con i settaggi di Device e con il vostro dispositivo collegato tramite porta USB e vedrete la vostra applicazione girare sul vostro iPhone.</p>
+Cosa serve:
+- Un Mac
+- Xcode installato
+- iPhone/iPad
+- Apple ID gratuito
+- Cavo USB
+
+### Account gratuito
+
+Vantaggi e limiti:
+- 7 giorni di testing
+- Massimo 3 app
+- No App Store
+- Solo test personale
+- Reinstallazione necessaria
+
+### Configurazione
+
+Passi da seguire:
+1. Crea Apple ID
+2. Accedi in Xcode
+3. Configura dispositivo
+4. Trust developer
+5. Abilita debug
+
+### Xcode setup
+
+In Xcode:
+- Aggiungi account
+- Seleziona team
+- Bundle identifier
+- Signing automatico
+- Capacità base
+
+### Build e Run
+
+Processo di test:
+1. Connetti dispositivo
+2. Seleziona target
+3. Build progetto
+4. Run su device
+5. Debug se necessario
+
+### Limitazioni
+
+Da considerare:
+- No push notifications
+- No iCloud
+- No in-app purchase
+- No TestFlight
+- No distribution
+
+### Alternative
+
+Altre opzioni:
+- Simulatore iOS
+- Browser testing
+- Account developer
+- Beta testing
+- Enterprise program
+
+### Tips & Tricks
+
+Consigli utili:
+- Backup regolari
+- Clean build
+- Reset simulatore
+- Log dettagliati
+- Test multipli
+
+### Conclusioni
+
+Punti chiave:
+1. Possibile testare gratis
+2. Limiti temporali
+3. Solo uso personale
+4. Rinnovo settimanale
+5. Alternative disponibili
