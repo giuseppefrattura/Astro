@@ -18,21 +18,21 @@ Ho trovato una guida molto interessante su come convertire in modo veloce e grat
 Questo metodo usa l'applicazione Automator, presente di default su ogni Mac.
 
 1. Premiamo prima il tasto mela e lo spazio contemporaneamente, apparirà Spotlight, all'interno di Spotlight scriviamo Automator.
-![MacBook Pro 16 2019](/assets/automation/spotlight.jpg)
+![MacBook Pro 16 2019](../assets/automation/spotlight.jpg)
 
 2. Andiamo su "nuovo documento" in basso a sinistra
-![MacBook Pro 16 2019](/assets/automation/automator_2.jpg)
+![MacBook Pro 16 2019](../assets/automation/automator_2.jpg)
 
 3. Tra le opzioni selezioniamo azione rapida
-![MacBook Pro 16 2019](/assets/automation/automator_1.jpg)
+![MacBook Pro 16 2019](../assets/automation/automator_1.jpg)
 
 4. Inseriamo due comandi, prima **copia elementi del finder** selezionando come destinazione la scrivania e aggiungiamo poi **Modifica tipo di immagini** selezionando come "Jpeg"
-![MacBook Pro 16 2019](/assets/automation/automator.jpg)
+![MacBook Pro 16 2019](../assets/automation/automator.jpg)
 
 5. Salviamo con il nome "converti in jpg" o come più vi piace
 
 Fatto, per testare questa nuova funzionalità selezioniamo una qualsiasi immagine e clicchiamoci sopra con il tasto destro o con control + tasto sinistro
-![MacBook Pro 16 2019](/assets/automation/convertiinjpg.jpg)
+![MacBook Pro 16 2019](../assets/automation/convertiinjpg.jpg)
 Nel menù a tendina apparirà in basso la voce converti in jpg.
 
 ### Creare un abbreviazione da tastiera
@@ -40,9 +40,9 @@ Nel menù a tendina apparirà in basso la voce converti in jpg.
 Se vogliamo essere ancora più veloci possiamo creare un'abbreviazione da tastiera (shortcut) per convertire le nostre immagini in jpg.
 
 1. cliccando sulla mela in alto a sinistra andiamo su preferenze di sistema.
-![MacBook Pro 16 2019](/assets/automation/preferenze.jpg)
+![MacBook Pro 16 2019](../assets/automation/preferenze.jpg)
 2. Andiamo su tastiera e poi abbreviazioni
 3. dall'elenco selezioniamo converti in jpg dall'elenco servizi ed aggiungiamo lo shortcut
-![MacBook Pro 16 2019](/assets/automation/abbreviazioni.jpg)
+![MacBook Pro 16 2019](../assets/automation/abbreviazioni.jpg)
 
 Tutto questo funziona su Mac ma su windows o altri sistemi ci sono vari software dedicati oppure siti online come [questo](https://convertio.co/it/heic-jpg/).

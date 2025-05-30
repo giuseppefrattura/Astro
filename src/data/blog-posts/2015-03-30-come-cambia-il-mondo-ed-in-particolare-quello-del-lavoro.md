@@ -10,7 +10,7 @@ A meno che tu non abbia vissuto in una caverna negli ultimi dieci anni avrai not
 
 <!--more-->
 
-![Mac Computer](/assets/Mac.jpg)
+![Mac Computer](../assets/Mac.jpg)
 
 Quante persone conosci che non lavorino con un computer?
 Beh io personalmente nessuna.

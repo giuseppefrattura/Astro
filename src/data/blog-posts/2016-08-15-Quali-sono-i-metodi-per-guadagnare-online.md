@@ -6,7 +6,7 @@ publishDate: 15 Aug 2016
 description: Una guida ai metodi più comuni per guadagnare attraverso internet
 ---
 
-![Guadagnare online](/assets/qualisonoimetodiperguadagnareonline/guadagnareonline.jpeg)
+![Guadagnare online](../assets/qualisonoimetodiperguadagnareonline/guadagnareonline.jpeg)
 
 **É possibile nel 2016 guadagnare dei soldi con Internet?**  
 La risposta è "si… ma", è il ma che frega tutti! Si può guadagnare con internet ma con impegno. Non puoi credere di iniziare la tua attività ed avere subito la fila di clienti.

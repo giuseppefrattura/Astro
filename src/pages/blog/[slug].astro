@@ -4,6 +4,7 @@ import readingTime from 'reading-time'
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Bio from '../../components/Bio.astro';
 
+
 export async function getStaticPaths() {
 	const posts = await getCollection('posts')
   return posts.map(p => ({

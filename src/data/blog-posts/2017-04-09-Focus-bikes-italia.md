@@ -6,7 +6,7 @@ publishDate: 09 Apr 2017
 description: Alla scoperta delle biciclette Focus Bikes per la primavera a Milano
 ---
 
-![Focus Bikes](/assets/focusBikes/roar.jpg)
+![Focus Bikes](../assets/focusBikes/roar.jpg)
 La primavera è alle porte e ritornano le belle giornate con una temperatura ideale per una bella scampagnata. Cosa di meglio allora per una bicicletta per qualche pedalata?
 
 Vivendo a Milano come sport oltre ad andare in palestra corro. Amo Milano perché nelle zone centrali è attrezzata con parchi mentre nelle zone periferiche è possibile fare delle piacevoli scampagnate nelle campagne, soprattutto nei giorni primaverili dove si apprezza di più il paesaggio e si respira un po' di aria pulita.

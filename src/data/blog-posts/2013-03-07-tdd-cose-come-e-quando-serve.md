@@ -15,7 +15,7 @@ Il TestDriveDevelopment è una metodologia di sviluppo tipicamente utilizzata co
 Per prima cosa bisogna dire che non è semplice partire da zero con il TDD, il concetto di base è partire da una funzionalità che il nostro software deve avere, a questo punto creiamo un test.....
 Si, può sembrare una cosa strana ma creiamo un test sul corretto funzionamento della funzionalità che dobbiamo ancora andare a implementare. Una volta fatto il test lo eseguiamo e come è logico pensare il test fallirà. Ora possiamo iniziare a scrivere la nostra nuova funzionalità, finita la quale il test dovrà dare esito positivo. Come passo finale si effettua la ristrutturazione del codice, ovvero si integra questa nuova funzionalità all'interno del codice precedentemente scritto in modo da mantenerlo leggibile e manutenibile evitando le così dette Bad Smell.
 
-![TDD Cicle](/assets/tdd_cycle.jpg)
+![TDD Cicle](../assets/tdd_cycle.jpg)
 
 ### I vantaggi del TDD
 

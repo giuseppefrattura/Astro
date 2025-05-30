@@ -26,6 +26,6 @@ Battute a parte sapere di poter contare sull'aiuto di un collega quando si lavor
 
 Insomma un bel gruppo lo si riconosce anche dalla collaboratività dei colleghi e per quanto possa sembrare un concetto banale in realtà lo si trova davvero raramente.
 
-![Colleghi](/assets/Colleghi.jpg)
+![Colleghi](../assets/Colleghi.jpg)
 
 Mi mancherete!

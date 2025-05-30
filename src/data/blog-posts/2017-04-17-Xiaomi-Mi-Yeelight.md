@@ -6,7 +6,7 @@ publishDate: 17 Apr 2017
 description: Recensione della lampadina smart Xiaomi Mi Yeelight per la domotica
 ---
 
-![Xiaomi Mi Yeelight](/assets/XiaomiMiYeelight.jpg)
+![Xiaomi Mi Yeelight](../assets/XiaomiMiYeelight.jpg)
 
 Affascinato dalla domotica e dalla possibilità di comandare, anche se solo in parte camera mia dal cellulare ho acquistato una lampadina [Xiaomi su Amazon](http://amzn.to/2pJ5iRY).
 

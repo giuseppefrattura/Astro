@@ -8,7 +8,7 @@ description: Come identificare e rimuovere il malware FlashBack su macOS
 
 Pare che negli ultimi mesi un Troyan di nome FlashBack sia riuscito ad infettare circa 600mila Mac tra portatili e fissi. Gli utenti Apple non sono mai stati propensi all'utilizzo di antivirus perché non c'è né mai stato un grande bisogno, eppure con l'aumento di vendite dei Mac stanno nascendo sempre più malware per questo tipo di computer.
 
-![Come proteggersi dalle nuove insidie del cavallo di troia su mac](/assets/come-proteggersi-dalle-nuove-insidie-del-cavallo-di-troia-su-mac-flashback-malware.jpg)
+![Come proteggersi dalle nuove insidie del cavallo di troia su mac](../assets/come-proteggersi-dalle-nuove-insidie-del-cavallo-di-troia-su-mac-flashback-malware.jpg)
 
 Il Troyan in questione sfrutta un bug nella macchina virtuale di Java per entrare nel sistema, una sua versione precedente usava un aggiornamento di Flash, un applicativo grafico molto usato, soprattutto dagli amanti della mela.
 
@@ -22,7 +22,7 @@ Se vedrete il risultato "No such file or directory", vuol dire che non siete sta
 
 Se siete stati infettati nessuna paura, i metodi per liberarsi del Troyan sono essenzialmente due.
 
-![Apple cura i malware](/assets/apple-cura-i-malware.jpg)
+![Apple cura i malware](../assets/apple-cura-i-malware.jpg)
 
 ### Metodo semplice
 

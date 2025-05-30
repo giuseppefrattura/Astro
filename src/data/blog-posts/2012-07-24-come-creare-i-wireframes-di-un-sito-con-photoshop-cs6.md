@@ -12,21 +12,21 @@ I wireframes sono ottimi per presentare un sito ad un committente senza iniziare
 
 Per prima cosa creiamo in Photoshop un nuovo file 1100 x 750 px.
 
-![Creazione nuovo wireframe](/assets/1.jpg)
+![Creazione nuovo wireframe](../assets/1.jpg)
 
 Fatto questo dividiamo l'immagine in griglie in modo da poter razionalizzare lo spazio ed esaminare nel dettaglio gli spazi dei singoli elementi della pagina.
 
-![Divisione in griglie](/assets/2.jpg)
+![Divisione in griglie](../assets/2.jpg)
 
-![Configurazione griglie](/assets/3.jpg)
+![Configurazione griglie](../assets/3.jpg)
 
-![Griglie completate](/assets/4.jpg)
+![Griglie completate](../assets/4.jpg)
 
 Dopo aver impostato a nostro piacimento le caratteristiche delle griglie aggiungiamo dei rettangoli (Tasto rapido **U**) e creiamoli di colore differente dallo sfondo: nell'esempio ho utilizzato uno sfondo grigio, ed il colore dei rettangoli è bianco. In particolare ho usato il classico stile a due colonne.
 
-![Aggiunta rettangoli](/assets/5.jpg)
+![Aggiunta rettangoli](../assets/5.jpg)
 
-![Layout a due colonne](/assets/6.jpg)
+![Layout a due colonne](../assets/6.jpg)
 
 Photoshop permette anche di inserire del testo all'interno dei rettangoli per specificarne i contenuti, ad esempio "Logo", ma è molto carina anche la funzione che selezionando lo strumento testo permette di riempire una casella con il Lorem Ipsum, **Type** -> **Paste Lorem Ipsum.**
 

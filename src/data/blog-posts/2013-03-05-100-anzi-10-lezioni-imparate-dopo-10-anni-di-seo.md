@@ -10,7 +10,7 @@ Seguendo il bravissimo e sempre aggiornato [Roberto Iacono](http://www.robertoia
 
 <!--more-->
 
-![SEO Offsite](/assets/offsite-1.jpg)
+![SEO Offsite](../assets/offsite-1.jpg)
 
 1. Non creare link di riferimento al tuo sito troppo velocemente – è capitato che una volta costruito un sito creasse molti link in entrata per i primi giorni, ma poi non se ne occupava più, questo portava ad un incremento del rank del sito momentaneo, che poi però decresceva velocemente. Il consiglio è quindi di sostenere un approccio più continuativo che intenso;
 

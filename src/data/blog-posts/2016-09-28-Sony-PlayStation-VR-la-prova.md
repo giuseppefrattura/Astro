@@ -6,7 +6,7 @@ publishDate: 28 Sep 2016
 description: Recensione dopo la prova del visore PlayStation VR di Sony
 ---
 
-![Playstation VR](/assets/PlayStation-VR.jpg)
+![Playstation VR](../assets/PlayStation-VR.jpg)
 
 Nei giorni 24 e 25 Settembre è stato possibile provare la nuova Playstation VR di Sony. Ho potuto testare in prima persona titoli come X e Y ed in questo articolo ne descriverò brevemente le caratteristiche.
 
@@ -16,7 +16,7 @@ Nei giorni 24 e 25 Settembre è stato possibile provare la nuova Playstation VR 
 
 Nei sistemi VR il visore è il componente indispensabile, quello di Sony è di grandissima qualità. Mi ha colpito in particolare il fatto che sia possibile indossare il visore anche con occhiali da vista e addirittura da sole! Una volta posizionato sulla testa va stretto quanto basta e ci si immerge del tutto nell'azione dei giochi.
 
-![Playstation VR drive](/assets/PlaystationVRDrive.jpg)
+![Playstation VR drive](../assets/PlaystationVRDrive.jpg)
 
 ### Grafica
 
@@ -32,7 +32,7 @@ I giochi da testare non erano molti ma comunque erano ad effetto, in particolare
 
 L'audio è in 3D stereo e consente di immergersi ancora di più nell'azione. In tutte le demo dei giochi provati è comunque sembrato molto realistico.
 
-![Playstation 4 special version](/assets/PS4SpecialVersion.jpg)
+![Playstation 4 special version](../assets/PS4SpecialVersion.jpg)
 
 ### In conclusione
 

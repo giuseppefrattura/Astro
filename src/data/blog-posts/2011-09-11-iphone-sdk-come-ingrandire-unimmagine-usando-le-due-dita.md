@@ -12,23 +12,23 @@ Ecco come si fa per l'iPhone SDK:
 
 Per prima cosa creiamo un nuovo progetto, una View-Based Application e chiamiamola FotoEsempio.
 
-![View Based Application](/assets/CreaProgetto.png)
-![Nome Del progetto](/assets/NomeProgetto.png)
+![View Based Application](../assets/CreaProgetto.png)
+![Nome Del progetto](../assets/NomeProgetto.png)
 
 Apriamo il file `FotoEsempioViewController.xib`, all'inizio questo file contiene solo la View.
 Sulla destra troviamo la libreria degli oggetti inseribili all'interno di un applicativo iPhone, scegliamo la Scroll View, ed inseriamola al di fuori della vista, poi cancelliamo la vista in modo che rimanga solo la scroll view.
 
-![File .xib originale](/assets/XibOriginale.png)
-![File .xib modificato](/assets/XibModificato.png)
+![File .xib originale](../assets/XibOriginale.png)
+![File .xib modificato](../assets/XibModificato.png)
 
 Clickiamo col tasto destro su File's Owner ed associamo all'attributo "view" la Scroll View che abbiamo appena inserito.
 
-![Impostiamo la View](/assets/ImpostaView.png)
-![Impostiamo la View 2](/assets/ImpostaView2.png)
+![Impostiamo la View](../assets/ImpostaView.png)
+![Impostiamo la View 2](../assets/ImpostaView2.png)
 
 Clicchiamo poi sempre col destro sulla scroll view e selezioniamo come delegato File's Owner.
 
-![Settiamo il delegato](/assets/Delegato.png)
+![Settiamo il delegato](../assets/Delegato.png)
 
 Nel file `FotoEsempioViewController.h` inseriamo:
 
@@ -75,8 +75,8 @@ Ed aggiungiamo la procedura:
 
 Aggiungiamo al progetto la nostra immagine `FotoEsempio.jpg`.
 
-![Inserimento dell'immagine](/assets/CopyFile.png)
+![Inserimento dell'immagine](../assets/CopyFile.png)
 
 Lanciamo il tutto, vedremo che anche da simulatore possiamo testare il tocco di due dita tramite la pressione del tasto "alt".
 
-![Anteprima progetto](/assets/Preview.png)
+![Anteprima progetto](../assets/Preview.png)

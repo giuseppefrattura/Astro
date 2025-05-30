@@ -6,7 +6,7 @@ publishDate: 28 Nov 2019
 description: Analisi dettagliata del nuovo MacBook Pro da 16 pollici
 ---
 
-![MacBook Pro 16 2019](/assets/Apple_16-inch/Apple_16-inch-MacBook-Pro.jpg)
+![MacBook Pro 16 2019](../assets/Apple_16-inch/Apple_16-inch-MacBook-Pro.jpg)
 
 Apple ha presentato il suo nuovo portatile, il MacBook Pro 16", prenderà il posto del 15". Non è definibile un cambio di stile perché esteticamente è molto simile al modello da un pollice in meno ma dentro è stato rimodernato con hardware all'avanguardia, fuori si nota uno schermo leggermente più grande e con risoluzione maggiore ed una nuova tastiera riprogettata per evitare i problemi avuti con i modelli precedenti.
 
@@ -18,7 +18,7 @@ Il nuovo monitor ha una luminosità di 500 nit, e supporta lo spazio colore P3. 
 
 La tastiera è stata riprogettata per evitare i problemi avuti con i precedenti modelli. Ora in particolare è stato anche aggiunto il tasto fisico di escape ( in alto a sinistra ) e per le frecce direzionali si è passati allo standard layout a T rovesciata.
 
-![MacBook Pro 16 2019 nuova magic Keyboard](/assets/Apple_16-inch/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard.jpg)
+![MacBook Pro 16 2019 nuova magic Keyboard](../assets/Apple_16-inch/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard.jpg)
 
 ### SSD
 

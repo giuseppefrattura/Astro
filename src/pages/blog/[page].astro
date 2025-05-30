@@ -2,30 +2,22 @@
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const title = 'Blog';
+export async function getStaticPaths({ paginate }) {
+  let posts = await getCollection('posts');
+  posts = posts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
+  return paginate(posts, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+const title = `Blog - Pagina ${page.currentPage}`;
 const description = 'Latest articles.';
-const permalink = `${Astro.site.href}blog`;
-
-// Impostazioni paginazione
-const postsPerPage = 10;
-const currentPage = 1;
-
-let allPosts = await getCollection('posts')
-allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
-
-// Calcola il totale delle pagine
-const totalPages = Math.ceil(allPosts.length / postsPerPage);
-
-// Ottieni i post per la pagina corrente
-const startIndex = (currentPage - 1) * postsPerPage;
-const endIndex = startIndex + postsPerPage;
-const currentPosts = allPosts.slice(startIndex, endIndex);
+const permalink = `${Astro.site.href}blog/${page.currentPage}`;
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink} current="blog">
   <div class="container">
     <h1>Blog</h1>
-    {currentPosts.map((post, index) => {
+    {page.data.map((post, index) => {
       const href = `/blog/${post.data.slug}`;
       return (
         <div>
@@ -43,20 +35,18 @@ const currentPosts = allPosts.slice(startIndex, endIndex);
       )
     })}
 
-    {totalPages > 1 && (
-      <nav class="pagination">
-        <div class="pagination-links">
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-            <a 
-              href={`/blog/${pageNum > 1 ? pageNum : ''}`}
-              class={`pagination-link ${pageNum === currentPage ? 'active' : ''}`}
-            >
-              {pageNum}
-            </a>
-          ))}
-        </div>
-      </nav>
-    )}
+    <nav class="pagination">
+      <div class="pagination-links">
+        {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((pageNum) => (
+          <a 
+            href={`/blog/${pageNum > 1 ? pageNum : ''}`}
+            class={`pagination-link ${pageNum === page.currentPage ? 'active' : ''}`}
+          >
+            {pageNum}
+          </a>
+        ))}
+      </div>
+    </nav>
   </div>
 </BaseLayout>
 

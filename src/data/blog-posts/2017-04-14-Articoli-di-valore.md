@@ -18,7 +18,7 @@ Questo non vale solo per un articolo ma anche ad esempio per un corso online, pe
 Prendiamo in esempio un corso di programmazione di un determinato linguaggio che parte dalle basi per arrivare ad i suoi utilizzi più avanzati. Magari le persone che già conoscono il linguaggio troveranno noiose le prime parti ma più interessanti le parti finali, per un novizio magari è il contrario perché per lui saranno di grande valore le lezioni iniziali mentre non riuscirà a comprendere le lezioni finali perché troppo avanzate.
 Idem per un corso di fotografia dove si spiega magari prima com'è fatta una macchina fotografica, poi la composizione e poi come fare post-elaborazione con programmi di grafica. A seconda di quanto si sia esperti e interessati ad un particolare argomento cambia il valore che un articolo può offrire.
 
-![Landscape photo](/assets/valore/photo_landscape.jpeg)
+![Landscape photo](../assets/valore/photo_landscape.jpeg)
 
 Sicuramente creare un contenuto al giorno da numerosi vantaggi all'autore, i due principali sono l'avere una grande quantità di materiale sul sito e poi il diventare più bravo e veloce nel creare e editare contenuti. Non è un caso che i migliori blogger ed anche i Vlogger di youtube si sforzano di creare un contenuto al giorno nonostante lo sforzo sia molto alto questo poi si traduce anche nell'avere un insieme di utenti che seguono in maniera devota il proprio sito ed i propri canali social.
 
