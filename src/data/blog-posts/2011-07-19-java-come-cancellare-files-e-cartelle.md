@@ -2,7 +2,7 @@
 slug: java-cancellare-files-cartelle
 published: true
 title: Java, come cancellare files e cartelle
-publishDate: 19 Lug 2011
+publishDate: 19 Aug 2011
 description: Guida su come cancellare file e cartelle in Java.
 ---
 

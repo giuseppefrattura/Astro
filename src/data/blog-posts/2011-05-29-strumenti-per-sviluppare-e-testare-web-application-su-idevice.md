@@ -2,7 +2,7 @@
 slug: strumenti-per-sviluppare-e-testare-web-application-su-idevice
 published: true
 title: Strumenti per sviluppare e testare web Application su iDevice
-publishDate: 29 Mag 2011
+publishDate: 29 May 2011
 description: Strumenti e tecniche per testare web app su dispositivi iOS.
 ---
 

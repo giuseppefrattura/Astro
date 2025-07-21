@@ -2,7 +2,7 @@
 slug: faac-home-lock
 published: true
 title: FAAC Home Lock
-publishDate: 05 Dic 2016
+publishDate: 05 Dec 2016
 description: Sistema di sorveglianza domestica senza fili di FAAC
 ---
 

@@ -2,7 +2,7 @@
 slug: il-mio-primo-drone
 published: true
 title: Il mio primo drone
-publishDate: 13 Gen 2017
+publishDate: 13 Jan 2017
 description: La mia esperienza con il primo drone Syma X5UW
 ---
 

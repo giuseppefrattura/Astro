@@ -2,7 +2,7 @@
 slug: installare-spotify-su-ubuntu
 published: true
 title: Come installare Spotify su Ubuntu Linux
-publishDate: 18 Dic 2015
+publishDate: 18 Dec 2015
 description: Guida passo passo per installare Spotify su sistemi Ubuntu Linux
 ---
 

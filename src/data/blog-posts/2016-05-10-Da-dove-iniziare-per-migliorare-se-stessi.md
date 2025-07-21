@@ -2,7 +2,7 @@
 slug: da-dove-iniziare-per-migliorare-se-stessi
 published: true
 title: Da dove iniziare per migliorare se stessi
-publishDate: 10 Mag 2016
+publishDate: 10 May 2016
 description: Guida pratica per iniziare un percorso di crescita personale
 ---
 

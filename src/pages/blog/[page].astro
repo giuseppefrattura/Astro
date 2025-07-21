@@ -12,6 +12,12 @@ const { page } = Astro.props;
 const title = `Blog - Pagina ${page.currentPage}`;
 const description = 'Latest articles.';
 const permalink = `${Astro.site.href}blog/${page.currentPage}`;
+
+// Funzione per formattare la data in formato gg/mm/aaaa
+function formatDate(date) {
+  const d = new Date(date);
+  return d.toLocaleDateString('it-IT');
+}
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink} current="blog">
@@ -28,7 +34,7 @@ const permalink = `${Astro.site.href}blog/${page.currentPage}`;
             </h2>
             <p>{post.data.description}</p>
             <div class="post-item-footer">
-              <span class="post-item-date">— {post.data.publishDate}</span>
+              <span class="post-item-date">— {formatDate(post.data.publishDate)}</span>
             </div>
           </div>
         </div>

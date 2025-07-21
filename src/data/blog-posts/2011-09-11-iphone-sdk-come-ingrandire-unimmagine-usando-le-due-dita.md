@@ -2,7 +2,7 @@
 slug: iphone-sdk-come-ingrandire-unimmagine-usando-le-due-dita
 published: true
 title: iPhone SDK Come ingrandire un'immagine usando le due dita
-publishDate: 11 set 2011
+publishDate: 11 Sep 2011
 description: Come implementare lo zoom su immagini con due dita in iPhone SDK.
 ---
 

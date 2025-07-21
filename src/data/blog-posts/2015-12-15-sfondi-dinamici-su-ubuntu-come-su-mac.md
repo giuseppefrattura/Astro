@@ -2,7 +2,7 @@
 slug: sfondi-dinamici-su-ubuntu-come-su-mac
 published: true
 title: Sfondi dinamici su ubuntu come su mac
-publishDate: 20 Dic 2015
+publishDate: 20 Dec 2015
 description: Come configurare sfondi automatici su Ubuntu usando Variety
 ---
 

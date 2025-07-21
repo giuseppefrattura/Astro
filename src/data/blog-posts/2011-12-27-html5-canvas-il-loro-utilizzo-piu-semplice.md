@@ -2,7 +2,7 @@
 slug: html5-canvas-il-loro-utilizzo-piu-semplice
 published: true
 title: HTML5 Canvas, il loro utilizzo più semplice
-publishDate: 27 Dic 2011
+publishDate: 27 Dec 2011
 description: Una guida semplice per utilizzare HTML5 Canvas in modo efficace.
 ---
 

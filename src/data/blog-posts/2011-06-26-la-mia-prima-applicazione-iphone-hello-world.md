@@ -2,7 +2,7 @@
 slug: la-mia-prima-applicazione-iphone-hello-world
 published: true
 title: La mia prima applicazione iPhone Hello World
-publishDate: 26 giu 2011
+publishDate: 26 Jun 2011
 description: Tutorial per creare una semplice app iPhone con Xcode.
 ---
 

@@ -2,7 +2,7 @@
 slug: come-scaricare-video-da-internet
 published: true
 title: Come scaricare video da internet
-publishDate: 11 Gen 2012
+publishDate: 11 Jan 2012
 description: Guida per scaricare video da vari siti web con strumenti utili.
 ---
 

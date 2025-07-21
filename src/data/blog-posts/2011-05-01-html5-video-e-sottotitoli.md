@@ -2,7 +2,7 @@
 slug: html5-video-e-sottotitoli
 published: true
 title: Html5 video e sottotitoli
-publishDate: 01 Mag 2011
+publishDate: 01 May 2011
 description: Utilizzo di jQuery per aggiungere sottotitoli ai video HTML5.
 ---
 

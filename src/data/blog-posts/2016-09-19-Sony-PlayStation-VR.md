@@ -2,7 +2,7 @@
 slug: sony-playstation-vr
 published: true
 title: Sony Playstation VR
-publishDate: 19 Set 2016
+publishDate: 19 Sep 2016
 description: Il visore per la realtà virtuale di Sony PlayStation arriva in Italia
 ---
 

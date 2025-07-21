@@ -2,7 +2,7 @@
 slug: soldi-e-lavoro-settore-mobile
 published: true
 title: Soldi e lavoro, quanto sono proporzionali nel settore mobile?
-publishDate: 15 Lug 2011
+publishDate: 15 Aug 2011
 description: Analisi del rapporto tra soldi e lavoro nel settore mobile.
 ---
 

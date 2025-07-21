@@ -2,7 +2,7 @@
 slug: gwt-cosa-sono-e-come-si-usano
 published: true
 title: Gwt cosa sono e come si usano
-publishDate: 15 Giu 2011
+publishDate: 15 Jun 2011
 description: Introduzione a GWT, framework per web app in Java.
 ---
 

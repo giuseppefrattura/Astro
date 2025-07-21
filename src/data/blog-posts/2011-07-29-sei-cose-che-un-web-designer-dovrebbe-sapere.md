@@ -2,7 +2,7 @@
 slug: sei-cose-web-designer
 published: true
 title: Sei cose che un Web Designer dovrebbe sapere
-publishDate: 29 Lug 2011
+publishDate: 29 Aug 2011
 description: Consigli utili per Web Designer su problemi comuni.
 ---
 

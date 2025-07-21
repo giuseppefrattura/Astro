@@ -2,7 +2,7 @@
 slug: come-creare-un-sito-web
 published: true
 title: Come creare un sito web
-publishDate: 30 Gen 2012
+publishDate: 30 Jan 2012
 description: Guida per creare un sito web con strumenti gratuiti e a pagamento.
 ---
 

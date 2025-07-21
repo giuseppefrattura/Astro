@@ -2,7 +2,7 @@
 slug: creare-ed-usare-files-persistenti-in-un-app-iphone
 published: true
 title: Creare ed usare files persistenti in un app iPhone
-publishDate: 16 giu 2011
+publishDate: 16 Jun 2011
 description: Guida su come gestire file persistenti in iPhone.
 ---
 

@@ -2,7 +2,7 @@
 slug: meglio-creare-un-app-o-un-sito-mobile-per-il-tuo-business
 published: true
 title: Meglio creare un app o un sito mobile per il tuo business
-publishDate: 07 Ott 2014
+publishDate: 07 Oct 2014
 description: Analisi dei pro e contro tra app native e siti web mobile
 ---
 

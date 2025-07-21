@@ -2,7 +2,7 @@
 slug: passare-da-wordpress-a-jekyll
 published: true
 title: Passare da Wordpress a Jekyll
-publishDate: 10 Dic 2015
+publishDate: 10 Dec 2015
 description: Come migrare il proprio blog da Wordpress a Jekyll per ottenere migliori performance
 ---
 

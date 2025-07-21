@@ -2,7 +2,7 @@
 slug: evento-premiazione-econocom
 published: true
 title: Evento premiazione Econocom
-publishDate: 15 Dic 2016
+publishDate: 15 Dec 2016
 description: Resoconto dell'evento The future is on di Econocom e premiazione del vincitore
 ---
 

@@ -2,7 +2,7 @@
 slug: connettere-un-applicativo-java-ad-oracle
 published: true
 title: Connettere un applicativo Java ad Oracle
-publishDate: 16 Set 2011
+publishDate: 16 Sep 2011
 description: Connettere un applicativo Java ad Oracle
 ---
 

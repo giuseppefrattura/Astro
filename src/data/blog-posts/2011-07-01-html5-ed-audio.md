@@ -2,7 +2,7 @@
 slug: html5-ed-audio
 published: true
 title: HTML5 ed audio
-publishDate: 01 Lug 2011
+publishDate: 01 Aug 2011
 description: Come includere e utilizzare audio in HTML5.
 ---
 

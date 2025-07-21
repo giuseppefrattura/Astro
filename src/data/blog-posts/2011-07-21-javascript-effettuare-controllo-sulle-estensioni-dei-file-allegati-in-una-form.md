@@ -2,7 +2,7 @@
 slug: javascript-controllo-estensioni-file
 published: true
 title: Effettuare controllo sulle estensioni dei file allegati in una Form
-publishDate: 21 Lug 2011
+publishDate: 21 Aug 2011
 description: Validazione delle estensioni dei file allegati con JavaScript.
 ---
 

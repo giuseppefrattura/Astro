@@ -2,7 +2,7 @@
 slug: ottimizzare-un-sito-per-liphone-quando-lo-si-aggiunge-alla-home
 published: true
 title: Ottimizzare un sito per l'iPhone quando lo si aggiunge alla home
-publishDate: 07 Set 2012
+publishDate: 07 Sep 2012
 description: Guide per ottimizzare il tuo sito web quando viene aggiunto alla home screen di iOS
 ---
 

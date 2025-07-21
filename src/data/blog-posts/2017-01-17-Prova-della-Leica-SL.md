@@ -2,7 +2,7 @@
 slug: prova-della-leica-sl
 published: true
 title: Prova della Leica SL
-publishDate: 13 Gen 2017
+publishDate: 13 Jan 2017
 description: Test e impressioni sulla fotocamera Leica SL con obiettivo 50mm F1.4
 ---
 

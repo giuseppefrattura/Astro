@@ -2,7 +2,7 @@
 slug: cosa-aspettarsi-dai-prossimi-mac-book-pro-2016
 published: true
 title: Cosa aspettarsi dai prossimi Mac Book Pro 2016
-publishDate: 23 Mag 2016
+publishDate: 23 May 2016
 description: Analisi delle nuove caratteristiche attese nei MacBook Pro 2016
 ---
 
