@@ -3,7 +3,7 @@ name: Deploy Astro site to S3
 on:
   push:
     branches:
-      - main  # deploy when pushing to main branch
+      - master  # deploy when pushing to main branch
 
 jobs:
   deploy:
