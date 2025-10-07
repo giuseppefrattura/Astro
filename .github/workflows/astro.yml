@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master  # deploy when pushing to main branch
+      - pipelineFix
 
 jobs:
   deploy:
