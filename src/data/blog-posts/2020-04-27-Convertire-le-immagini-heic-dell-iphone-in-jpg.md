@@ -27,7 +27,7 @@ Questo metodo usa l'applicazione Automator, presente di default su ogni Mac.
 ![MacBook Pro 16 2019](../assets/automation/automator_1.jpg)
 
 4. Inseriamo due comandi, prima **copia elementi del finder** selezionando come destinazione la scrivania e aggiungiamo poi **Modifica tipo di immagini** selezionando come "Jpeg"
-![MacBook Pro 16 2019](../assets/automation/automator.jpg)
+![MacBook Pro 16 2019](../assets/automation/Automator.jpg)
                     
 5. Salviamo con il nome "converti in jpg" o come più vi piace
 
