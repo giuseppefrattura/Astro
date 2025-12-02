@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Links';
+const description = 'Links to my profiles';
+const permalink = `${Astro.site.href}links`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about">
+  <div class="container">
+ <!-- 1. Profile Picture  -->
+    <img class="profile-picture"
+        src="https://www.giuseppefrattura.com/assets/GiuseppeFrattura.jpg" />
+
+    <!-- 2. Profile Name or User Account  -->
+
+    <div class="profile-name">Giuseppe Frattura</div>
+
+    <!-- 3. Links  -->
+
+
+    <a href="https://giuseppefrattura.com" class="links">
+        Website
+    </a>
+
+    <a href="https://www.instagram.com/giuseppefrattura/" class="links">
+        Instagram
+    </a>
+
+
+    <a href="https://www.youtube.com/channel/UC8pnHbjxkGgl9b9awlyPtWA" class="links">
+        YouTube
+    </a>
+
+
+    <a href="https://www.linkedin.com/in/giuseppefrattura/" class="links">
+        Linkedin
+    </a>
+
+
+    <a href="https://twitter.com/PeppeFrattura" class="links">
+        Twitter
+    </a>
+
+
+    <a href="https://www.tiktok.com/@giuseppefrattura4" class="links">
+        TikTok
+    </a>
+
+    <a href="https://www.subito.it/utente/3474657" class="links">
+        In vendita
+    </a>
+
+  </div>    
+</BaseLayout>
+
+<style>
+  .profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 10%;
+  height: auto;
+  max-width: 100px;
+
+  border-radius: 50%;
+}
+
+.profile-name {
+  text-align: center;
+
+  padding: 30px;
+  font-size: 28px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid red;
+  border-width: 2px;
+  padding: 20px;
+  font-weight: bold;
+
+  width: 290px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 40px;
+
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+
+  color: white;
+  transition: color 1s;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+}
+</style>
