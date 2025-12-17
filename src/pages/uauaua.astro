@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'uauaua';
+const description = 'Simple audio...';
+const permalink = `${Astro.site.href}uauaua`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about">
+  <div class="container">
+
+    <!-- <input type="button" value="PLAY" onclick="play()"> -->
+    <img style="width: 49%;" src="/assets/funnyApp/RedButton.png" onclick="play('audio')" alt="">
+    <audio id="audio" src="/assets/funnyApp/BaDumTss.mp3"></audio>
+    
+    <img style="width: 49%;" src="/assets/funnyApp/BlueButton.png" onclick="play('audioSad')" alt="">
+    <audio id="audioSad" src="/assets/funnyApp/SadTrombone.mp3"></audio>
+    
+    <img style="width: 49%;" src="/assets/funnyApp/YellowButton.png" onclick="play('maquantenesa')" alt="">
+    <audio id="maquantenesa" src="/assets/funnyApp/maquantenesa.m4a"></audio>
+    
+    <img style="width: 49%;" src="/assets/funnyApp/PurpleButton.png" onclick="play('bianchi')" alt="">
+    <audio id="bianchi" src="/assets/funnyApp/bianchi.mp4"></audio>  
+  </div>    
+</BaseLayout>
+
+
+    <script is:inline>
+      function play(elemID) {
+        var audio = document.getElementById(elemID);
+        if (audio) {
+          audio.play();
+        }
+      }
+    </script>

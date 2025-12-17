@@ -1,23 +1,30 @@
 <script>
-  const rootEl = typeof document !== 'undefined' ? document.documentElement : null;
-  const themes = ['light', 'dark'];
-  let theme = ''
+  import { onMount } from 'svelte';
 
-  if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-    theme = localStorage.getItem('theme');
-  } else if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = 'dark';
-  }
+  let rootEl = null;
+  const themes = ['light', 'dark'];
+  let theme = 'light';
+
+  onMount(() => {
+    rootEl = document.documentElement;
+    if (localStorage.getItem('theme')) {
+      theme = localStorage.getItem('theme');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    }
+  });
 
   function handleChange(event) {
     theme = event.target.value;
     localStorage.setItem('theme', theme);
   }
 
-  $: if (rootEl && theme === 'light') {
-    rootEl.classList.remove('theme-dark');
-  } else if (rootEl && theme === 'dark') {
-    rootEl.classList.add('theme-dark');
+  $: if (rootEl) {
+    if (theme === 'light') {
+      rootEl.classList.remove('theme-dark');
+    } else if (theme === 'dark') {
+      rootEl.classList.add('theme-dark');
+    }
   }
 
   const icons = [
