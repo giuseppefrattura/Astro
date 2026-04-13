@@ -1,13 +1,10 @@
 ---
 slug: programmazione-con-ai
-published: true
 title: Programmazione con l'AI
-publishDate: 8 Apr 2026
 description: Come l'intelligenza artificiale e gli agenti conversazionali stanno cambiando il modo di programmare
-tags:
-  - AI
-  - programmazione
-  - strumenti
+published: true
+publishDate: 8 Apr 2026
+
 ---
 
 Introduzione
