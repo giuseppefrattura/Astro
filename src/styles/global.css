@@ -5,6 +5,9 @@
   --primary-color: #548e9b;
   --font-family-serif: Merriweather, serif;
   --font-family-sans: 'Fira Sans', sans-serif;
+  --theme-code-inline-bg: #f4f4f5;
+  --theme-code-inline-text: #18181b;
+  --theme-accent: #548e9b;
 }
 
 :root.theme-dark {
@@ -12,6 +15,9 @@
   --text-main: #fff;
   --text-secondary: #ccc;
   --primary-color: #548e9b;
+  --theme-code-inline-bg: #2d2e30;
+  --theme-code-inline-text: #f4f4f5;
+  --theme-accent: #7dc4d4;
 }
 
 html {

@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import YoutubeEmbed from '../components/YoutubeEmbed.astro';
+import avatarImg from '../../public/assets/avatar.jpeg';
 
 const title = 'Giuseppe Frattura';
 const description = 'About me.';
@@ -10,7 +13,7 @@ const permalink = `${Astro.site.href}about`;
   <div class="container">
     <!-- <h1>About</h1> -->
     <figure class="about-image">
-      <img src="/assets/avatar.jpeg" alt="Illustration of a notebook" width="330">
+      <Image src={avatarImg} alt="Illustration of a notebook" width={300} height={300} fetchpriority="high" loading="eager" />
     </figure>
     <p>Ciao sono Giuseppe Frattura, ho 39 anni e sono un Sviluppatore Software.
 Sono laureato in Informatica presso l'università Federico Secondo di Napoli, lavoro a Milano come programmatore informatico.</p>
@@ -46,7 +49,7 @@ Sono laureato in Informatica presso l'università Federico Secondo di Napoli, la
   
 
 <p>Non importa il campo o la tecnologia usata, come dice il Signor Wolf di Pulp Fiction "io risolvo problemi".
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6fFzVyV1FWk?si=aK44DOaeMw2bJQ7h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<YoutubeEmbed videoId="6fFzVyV1FWk" title="YouTube video player" />
   </p>
 </div>
 </BaseLayout>

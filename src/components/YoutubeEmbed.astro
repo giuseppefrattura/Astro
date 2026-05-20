@@ -1,0 +1,109 @@
+---
+export interface Props {
+  videoId: string;
+  title: string;
+}
+
+const { videoId, title } = Astro.props;
+const thumbnailUrl = `https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+---
+
+<div class="youtube-facade-container" data-video-id={videoId} data-embed-url={embedUrl} data-title={title}>
+  <button class="play-button" aria-label={`Play video: ${title}`}>
+    <svg viewBox="0 0 68 48" width="68" height="48">
+      <path class="play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#cc181e" fill-opacity="0.9"></path>
+      <path d="M 45,24 27,14 27,34 z" fill="#fff"></path>
+    </svg>
+  </button>
+  <img src={thumbnailUrl} alt={title} width="560" height="315" loading="lazy" />
+</div>
+
+<style>
+  .youtube-facade-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 560 / 315;
+    background-color: #000;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 1.5em 0;
+  }
+
+  .youtube-facade-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+
+  .youtube-facade-container:hover img {
+    opacity: 0.95;
+  }
+
+  .play-button {
+    position: absolute;
+    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .youtube-facade-container:hover .play-button {
+    transform: scale(1.1);
+  }
+
+  .play-button-bg {
+    transition: fill 0.3s;
+  }
+
+  .youtube-facade-container:hover .play-button-bg {
+    fill: #ff0000;
+    fill-opacity: 1;
+  }
+</style>
+
+<script>
+  function initYoutubeFacade() {
+    const containers = document.querySelectorAll('.youtube-facade-container');
+    containers.forEach(container => {
+      // Check if it already has a click listener or iframe
+      if (container.getAttribute('data-initialized')) return;
+      container.setAttribute('data-initialized', 'true');
+
+      container.addEventListener('click', () => {
+        const embedUrl = container.getAttribute('data-embed-url');
+        const title = container.getAttribute('data-title');
+        if (!embedUrl) return;
+
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('width', '560');
+        iframe.setAttribute('height', '315');
+        iframe.setAttribute('src', embedUrl);
+        if (title) iframe.setAttribute('title', title);
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        iframe.setAttribute('allowfullscreen', 'true');
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        
+        container.innerHTML = '';
+        container.appendChild(iframe);
+      }, { once: true });
+    });
+  }
+
+  // Initial runs
+  initYoutubeFacade();
+  // Support ClientRouter
+  document.addEventListener('astro:after-swap', initYoutubeFacade);
+</script>
