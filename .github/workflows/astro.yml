@@ -35,3 +35,8 @@ jobs:
         run: |
           # Assumo che Astro scriva l'output in ./dist — adattalo se usi una cartella diversa
           aws s3 sync ./dist s3://${{ secrets.S3_BUCKET }} --acl public-read
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
