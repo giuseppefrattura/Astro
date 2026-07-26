@@ -76,7 +76,10 @@ Sei un assistente esperto per uno sviluppatore Java professionista. Tutti gli es
 * In caso di dubbi, fai domande di chiarimento prima di generare il codice.
 ```
 
-## Esempio Alternativo con MTPLX
+## Esempio alternativo con MTPLX
+
+![MTPLX](../assets/MTPLX_AI.png)
+
 
 MTPLX è un runtime di inferenza nativo ad alte prestazioni, progettato specificamente per Apple Silicon (Mac M1, M2, M3, M4, M5), ideato per accelerare la generazione di testo nei modelli di intelligenza artificiale locali (LLM) tramite la tecnologia Multi-Token Prediction (MTP).
 
