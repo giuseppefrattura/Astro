@@ -23,6 +23,17 @@ if (import.meta.env.PROD && !isLighthouseOrLocal) {
     ],
     // Disable logs to be sent to Sentry
     enableLogs: false,
+    // Filter out known third-party browser noise, including Meta/Instagram In-App Browser (IAB) bridge errors
+    ignoreErrors: [
+      "Java object is gone",
+      "Error invoking postMessage: Java object is gone",
+      "Java exception was raised during method invocation",
+    ],
+    denyUrls: [
+      // Injected scripts from Meta In-App Browser on Android
+      /^iabjs:\/\//i,
+      /navigation_performance_logger_android/i,
+    ],
     // Define how likely traces are sampled. Sample 10% in production.
     tracesSampleRate: 0.1,
     // Disable CPU-intensive session replay recording for standard sessions

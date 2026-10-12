@@ -9,10 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.3.0",
-    "@astrojs/mdx": "^8.0.0",
+    "@astrojs/markdown-remark": "^7.3.2",
+    "@astrojs/mdx": "^8.0.3",
     "@sentry/astro": "^10.73.0",
-    "astro": "^7.2.10",
+    "astro": "^7.3.8",
     "esbuild": "^0.28.2",
     "reading-time": "^1.5.0",
     "rehype-external-links": "^3.0.0",
