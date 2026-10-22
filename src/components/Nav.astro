@@ -22,7 +22,7 @@ const { current = '' } = Astro.props;
     display: block;
     position: relative;
     margin-left: 20px;
-    min-width: 70px;
+    min-width: 0;
     text-align: center;
   }
 
@@ -52,21 +52,24 @@ const { current = '' } = Astro.props;
   }
 
   .theme-toggle-container {
-    width: 75px;
+    flex-shrink: 0;
   }
 
   @media screen and (max-width: 520px) {
-    .theme-toggle-container {
-      margin-right: 1em;
+    a {
+      margin-left: 8px;
+      padding: 10px 2px;
+      font-size: 0.75rem;
     }
+    .theme-toggle-container { margin-right: 0; }
   }
 
 </style>
 
-<nav>
+<nav aria-label="Navigazione principale">
   <a class={current === "" ? "selected" : ""} href='/'>home</a>
   <!-- <a class={current === "about" ? "selected" : ""} href='/about'>about</a> -->
-  <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
+  <a class={current === "blog" ? "selected" : ""} href='/blog/'>blog</a>
   <div class="theme-toggle-container">
     <ThemeToggleButton />
   </div>

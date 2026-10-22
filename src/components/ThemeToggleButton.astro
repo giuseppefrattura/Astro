@@ -36,8 +36,8 @@ const icons = [
         type="radio"
         name="theme-toggle"
         value={t}
-        title={`Use ${t} theme`}
-        aria-label={`Use ${t} theme`}
+        title={`Usa il tema ${t === 'light' ? 'chiaro' : 'scuro'}`}
+        aria-label={`Usa il tema ${t === 'light' ? 'chiaro' : 'scuro'}`}
       />
     </label>
   ))}
@@ -48,8 +48,10 @@ const icons = [
     const rootEl = document.documentElement;
     
     function getTheme() {
-      if (localStorage.getItem('theme')) {
-        return localStorage.getItem('theme');
+      let saved;
+      try { saved = localStorage.getItem('theme'); } catch { /* Storage may be blocked. */ }
+      if (saved === 'light' || saved === 'dark') {
+        return saved;
       } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         return 'dark';
       }
@@ -85,7 +87,7 @@ const icons = [
       input.addEventListener('change', (e) => {
         const target = e.target as HTMLInputElement;
         const val = target.value;
-        localStorage.setItem('theme', val);
+        try { localStorage.setItem('theme', val); } catch { /* Apply for this page even without storage. */ }
         updateDOM(val);
       });
     });

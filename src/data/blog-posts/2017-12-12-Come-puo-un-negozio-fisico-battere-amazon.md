@@ -26,6 +26,7 @@ Principalmente due motivi, **il primo** è che l'ultima volta che sono entrato i
 
 **Il secondo** motivo è un video di [New Old Camera](http://www.newoldcamera.it), un negozio di fotografia che cerca un nuovo dipendente, nel video sono elencate le caratteristiche necessarie, puoi vedere il video qui sotto.
 
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnewoldcamera%2Fvideos%2F1343935452381856%2F&show_text=1&width=560" width="560" height="521"  style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 521" data-embed-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnewoldcamera%2Fvideos%2F1343935452381856%2F&amp;show_text=1&amp;width=560" data-title="Come può un negozio fisico battere Amazon — Facebook"><button type="button" class="video-play" aria-label="Riproduci video: Come può un negozio fisico battere Amazon — Facebook"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnewoldcamera%2Fvideos%2F1343935452381856%2F&amp;show_text=1&amp;width=560">Apri il video su Facebook</a>
 
 Come ti sei trovato nei negozi fisici, preferisci comprare li o online? Commenta pure

@@ -1,106 +1,14 @@
 ---
-import { getCollection } from 'astro:content'
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { GetStaticPaths, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import BlogListing from '../../components/BlogListing.astro';
+import { getPosts, postsPerPage } from '../../lib/posts';
 
-export async function getStaticPaths({ paginate }) {
-  let posts = await getCollection('posts');
-  posts = posts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf());
-  return paginate(posts, { pageSize: 10 });
-}
-
+export const getStaticPaths = (async ({ paginate }) => {
+  const pages = paginate(await getPosts(), { pageSize: postsPerPage });
+  return pages.filter(({ props }) => props.page.currentPage > 1);
+}) satisfies GetStaticPaths;
+interface Props { page: Page<CollectionEntry<'posts'>> }
 const { page } = Astro.props;
-const title = `Blog - Pagina ${page.currentPage}`;
-const description = 'Latest articles.';
-const permalink = `${Astro.site.href}blog/${page.currentPage}`;
-
-// Funzione per formattare la data in formato gg/mm/aaaa
-function formatDate(date) {
-  const d = new Date(date);
-  return d.toLocaleDateString('it-IT');
-}
 ---
-
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
-  <div class="container">
-    <h1>Blog</h1>
-    {page.data.map((post, index) => {
-      const href = `/blog/${post.data.slug}`;
-      return (
-        <div>
-          { index !== 0 && <hr /> }
-          <div class="post-item">
-            <h2>
-              <a href={href}>{post.data.title}</a>
-            </h2>
-            <p>{post.data.description}</p>
-            <div class="post-item-footer">
-              <span class="post-item-date">— {formatDate(post.data.publishDate)}</span>
-            </div>
-          </div>
-        </div>
-      )
-    })}
-
-    <nav class="pagination">
-      <div class="pagination-links">
-        {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((pageNum) => (
-          <a 
-            href={`/blog/${pageNum > 1 ? pageNum : ''}`}
-            class={`pagination-link ${pageNum === page.currentPage ? 'active' : ''}`}
-          >
-            {pageNum}
-          </a>
-        ))}
-      </div>
-    </nav>
-  </div>
-</BaseLayout>
-
-<style>
-  h2,
-  .post-item-footer {
-    font-family: var(--font-family-sans);
-    font-weight: 700;
-  }
-
-  .post-item-date {
-    color: var(--text-secondary);
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 16px;
-  }
-
-  hr {
-    margin: 60px auto;
-  }
-
-  .pagination {
-    margin-top: 3rem;
-    text-align: center;
-  }
-
-  .pagination-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .pagination-link {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--text-secondary);
-    border-radius: 4px;
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .pagination-link:hover {
-    background-color: var(--text-secondary);
-    color: var(--background);
-  }
-
-  .pagination-link.active {
-    background-color: var(--text-secondary);
-    color: var(--background);
-  }
-</style>
+<BlogListing posts={page.data} currentPage={page.currentPage} totalPages={page.lastPage} />

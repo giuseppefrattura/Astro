@@ -22,7 +22,8 @@ Ci sono anche miglioramenti dal punto di vista delle funzionalità. L'hypersmoot
 ### Time Warp 2.0
 Il Time Warp anch'esso già presente nella gopro 7 consente di creare filmati stabili anche quando si è in movimento utilizzando un numero molto ridotto di frame, avendo quindi un video molto più breve del girato.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qFh7Es_QycM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/qFh7Es_QycM" data-title="GoPro annuncia la Hero 8 — YouTube"><img src="https://i3.ytimg.com/vi/qFh7Es_QycM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: GoPro annuncia la Hero 8 — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=qFh7Es_QycM">Apri il video su YouTube</a>
 
 Time Warp 2.0 è in grado di regolare automaticamente la velocità del filmato in base alla velocità con cui si muove la cam, ed è inoltre possibile con un click terminare il time warp continuando a filmare in modalità standard.
 

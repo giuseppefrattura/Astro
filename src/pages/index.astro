@@ -5,22 +5,25 @@ import YoutubeEmbed from "../components/YoutubeEmbed.astro";
 import avatarImg from "../../public/assets/avatar.jpeg";
 
 const title = "Giuseppe Frattura";
-const description = "About me.";
-const permalink = `${Astro.site.href}about`;
+const description = "Giuseppe Frattura, sviluppatore software a Milano: esperienze, progetti e articoli su tecnologia, programmazione e fotografia.";
+const permalink = Astro.site.href;
 ---
 
 <BaseLayout
   title={title}
   description={description}
   permalink={permalink}
-  current="about"
+  current=""
 >
   <div class="container">
-    <!-- <h1>About</h1> -->
+    <h1 class="sr-only">Giuseppe Frattura, sviluppatore software</h1>
     <figure class="about-image">
       <Image
         src={avatarImg}
-        alt="Illustration of a notebook"
+        alt="Ritratto di Giuseppe Frattura"
+        layout="none"
+        widths={[300, 600]}
+        sizes="(max-width: 360px) calc(100vw - 4rem), 300px"
         width={300}
         height={300}
         fetchpriority="high"
@@ -39,7 +42,7 @@ const permalink = `${Astro.site.href}about`;
       >.
     </p>
 
-    <h3>Stack Tecnologico</h3>
+    <h2 class="stack-heading">Stack tecnologico</h2>
     <ul>
       <li><strong>Java / Spring Boot</strong></li>
       <li><strong>Docker, CI/CD</strong></li>
@@ -79,19 +82,25 @@ const permalink = `${Astro.site.href}about`;
       Non importa il campo o la tecnologia usata, come dice il Signor Wolf di
       Pulp Fiction "io risolvo problemi".
     </p>
-    <YoutubeEmbed videoId="6fFzVyV1FWk" title="YouTube video player" />
+    <YoutubeEmbed videoId="6fFzVyV1FWk" title="Il signor Wolf: io risolvo problemi" />
   </div>
 
   <style>
+    .stack-heading { font-size: 1.5em; margin: 1em 0 0.5em; }
+
     .about-image {
       float: right;
-      margin: -3em -7em 2em 2em;
-      max-width: 300px;
+      margin: 0 0 2em 2em;
+      width: min(300px, 100%);
+      aspect-ratio: 1;
     }
 
     .about-image img {
       border-radius: 8px;
-      margin-bottom: 1.5em;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     @media (max-width: 1020px) {

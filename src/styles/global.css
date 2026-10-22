@@ -285,3 +285,19 @@ input[name='theme-toggle'] {
     margin: 1em 0;
   }
 }
+
+/* Reserve readable layouts rather than clipping overflowing content. */
+h1, h2, h3, p, a { overflow-wrap: anywhere; }
+.content pre { max-width: 100%; overflow-x: auto; }
+.content table { display: block; max-width: 100%; overflow-x: auto; }
+.content video { max-width: 100%; height: auto; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+.skip-link { position: absolute; left: 1rem; top: -10rem; z-index: 10; padding: 0.75rem; background: var(--background-body); }
+.skip-link:focus { top: 1rem; }
+:focus-visible { outline: 2px solid var(--theme-accent); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

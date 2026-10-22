@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Pagination from './Pagination.astro';
+import { blogPagePath } from '../lib/posts';
+interface Props { posts: CollectionEntry<'posts'>[]; currentPage: number; totalPages: number }
+const { posts, currentPage, totalPages } = Astro.props;
+const title = currentPage === 1 ? 'Blog' : `Blog — Pagina ${currentPage}`;
+const permalink = new URL(blogPagePath(currentPage), Astro.site).href;
+---
+<BaseLayout title={title} description={`Articoli di Giuseppe Frattura su software, tecnologia e fotografia. Pagina ${currentPage}.`} permalink={permalink} current="blog">
+  <div class="container">
+    <h1>{title}</h1>
+    {posts.map((post, index) => (
+      <div>
+        {index !== 0 && <hr />}
+        <article>
+          <h2><a href={`/blog/${post.data.slug}/`}>{post.data.title}</a></h2>
+          <p>{post.data.description}</p>
+          <time datetime={post.data.publishDate.toISOString()}>
+            — {post.data.publishDate.toLocaleDateString('it-IT')}
+          </time>
+        </article>
+      </div>
+    ))}
+    <Pagination currentPage={currentPage} totalPages={totalPages} />
+  </div>
+</BaseLayout>
+<style>
+  h2, time { font-family: var(--font-family-sans); font-weight: 700; }
+  time { color: var(--text-secondary); }
+  hr { margin: 60px auto; }
+</style>

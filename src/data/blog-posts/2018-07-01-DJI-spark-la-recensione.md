@@ -12,7 +12,8 @@ Ho acquistato online il drone della DJI modello Spark, e ne sono rimasto entusia
 
 Il mio primo Drone è stato il Syma X5C e ne sono rimasto abbastanza deluso, ne parlo in [questo articolo]({% post_url 2017-02-07-Il-mio-primo-drone %}). La qualità dei video con il syma era veramente bassa, 720p interpolati, tra l'altro la camera non aveva alcun tipo di stabilizzatore dell'immagine, né fisico ( gimbal ) ne software, ed il risultato erano dei video con l'immagine traballante. I colori erano veramente brutti, spenti. Il drone poi era molto instabile, non riusciva e restare fermo neanche in completa assenza di vento. Viste queste caratteristiche ho usato poco il drone hc e oltretutto era anche abbastanza grande e difficile da trasportare ad esempio in uno zaino.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Nmuets-Ll-Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/Nmuets-Ll-Q" data-title="DJI Spark la recensione — YouTube"><img src="https://i3.ytimg.com/vi/Nmuets-Ll-Q/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: DJI Spark la recensione — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=Nmuets-Ll-Q">Apri il video su YouTube</a>
 
 Quindi questa recensione è principalmente un confronto tra un drone giocattolo ed il "selfie drone" di DJI.
 

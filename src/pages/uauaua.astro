@@ -1,35 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const title = 'uauaua';
-const description = 'Simple audio...';
-const permalink = `${Astro.site.href}uauaua`;
+const sounds = [
+  { id: 'badum', image: 'RedButton.png', file: 'BaDumTss.mp3', label: 'Ba dum tss' },
+  { id: 'sad', image: 'BlueButton.png', file: 'SadTrombone.mp3', label: 'Trombone triste' },
+  { id: 'quanto', image: 'YellowButton.png', file: 'maquantenesa.m4a', label: 'Ma quante ne sa' },
+  { id: 'bianchi', image: 'PurpleButton.png', file: 'bianchi.mp4', label: 'Bianchi' },
+];
 ---
-
-<BaseLayout title={title} description={description} permalink={permalink} current="about">
+<BaseLayout title="Uauaua — Suoni" description="Una piccola raccolta di effetti sonori." permalink={new URL('/uauaua/', Astro.site).href}>
   <div class="container">
-
-    <!-- <input type="button" value="PLAY" onclick="play()"> -->
-    <img style="width: 49%;" src="/assets/funnyApp/RedButton.png" onclick="play('audio')" alt="Red sound button" width="300" height="300">
-    <audio id="audio" src="/assets/funnyApp/BaDumTss.mp3"></audio>
-    
-    <img style="width: 49%;" src="/assets/funnyApp/BlueButton.png" onclick="play('audioSad')" alt="Blue sound button" width="300" height="300">
-    <audio id="audioSad" src="/assets/funnyApp/SadTrombone.mp3"></audio>
-    
-    <img style="width: 49%;" src="/assets/funnyApp/YellowButton.png" onclick="play('maquantenesa')" alt="Yellow sound button" width="300" height="300">
-    <audio id="maquantenesa" src="/assets/funnyApp/maquantenesa.m4a"></audio>
-    
-    <img style="width: 49%;" src="/assets/funnyApp/PurpleButton.png" onclick="play('bianchi')" alt="Purple sound button" width="300" height="300">
-    <audio id="bianchi" src="/assets/funnyApp/bianchi.mp4"></audio>  
-  </div>    
+    <h1>Suoni</h1>
+    <div class="sounds">
+      {sounds.map((sound) => (
+        <div>
+          <button type="button" data-audio={sound.id} aria-label={`Riproduci: ${sound.label}`}>
+            <img src={`/assets/funnyApp/${sound.image}`} alt="" width="300" height="300" loading="lazy" />
+          </button>
+          <audio id={sound.id} src={`/assets/funnyApp/${sound.file}`} preload="none" controls aria-label={sound.label}></audio>
+        </div>
+      ))}
+    </div>
+  </div>
 </BaseLayout>
-
-
-    <script is:inline>
-      function play(elemID) {
-        var audio = document.getElementById(elemID);
-        if (audio) {
-          audio.play();
-        }
-      }
-    </script>
+<script>
+  document.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const button = event.target.closest<HTMLButtonElement>('button[data-audio]');
+    const audio = button?.dataset.audio && document.getElementById(button.dataset.audio);
+    if (audio instanceof HTMLMediaElement) void audio.play().catch(() => audio.focus());
+  });
+</script>
+<style>
+  .sounds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
+  audio { width: 100%; }
+</style>

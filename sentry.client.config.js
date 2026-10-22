@@ -1,14 +1,10 @@
 import * as Sentry from "@sentry/astro";
 
-// Optimization: Bypass Sentry on localhost, 127.0.0.1, and during Lighthouse audits.
-// This prevents heavy telemetry scripts from blocking the main thread and impacting audits/local speed,
-// while keeping full production tracking intact for actual users.
-const isLighthouseOrLocal = typeof window !== 'undefined' && 
-  (window.location.hostname === 'localhost' || 
-   window.location.hostname === '127.0.0.1' || 
-   navigator.userAgent.includes('Chrome-Lighthouse'));
+// Keep error reporting and tracing active from startup for users and audits alike.
+const isLocal = typeof window !== 'undefined' &&
+  ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname);
 
-if (import.meta.env.PROD && !isLighthouseOrLocal) {
+if (import.meta.env.PROD && !isLocal) {
   Sentry.init({
     dsn: "https://37d0b46c2fc0bc86e3300ba92cfcedcf@o4509241765068800.ingest.de.sentry.io/4509241767034960",
     // Adds request headers and IP for users, for more info visit:
@@ -16,10 +12,6 @@ if (import.meta.env.PROD && !isLighthouseOrLocal) {
     sendDefaultPii: true,
     integrations: [
       Sentry.browserTracingIntegration(),
-      Sentry.replayIntegration({
-        maskAllText: true,
-        blockAllMedia: true,
-      }),
     ],
     // Disable logs to be sent to Sentry
     enableLogs: false,
@@ -41,4 +33,16 @@ if (import.meta.env.PROD && !isLighthouseOrLocal) {
     // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
     replaysOnErrorSampleRate: 1.0,
   });
+
+  // Split the recorder out of the initial bundle. Errors remain captured immediately;
+  // replay context starts after load, so it cannot include the initial loading phase.
+  const loadReplay = () => {
+    const enable = () => { void import('./src/lib/sentry-replay').then(({ enableReplay }) => enableReplay()).catch(() => {
+      // A failed optional recorder must not interrupt normal error reporting.
+    }); };
+    if ('requestIdleCallback' in window) window.requestIdleCallback(enable, { timeout: 2000 });
+    else setTimeout(enable, 0);
+  };
+  if (document.readyState === 'complete') loadReplay();
+  else window.addEventListener('load', loadReplay, { once: true });
 }

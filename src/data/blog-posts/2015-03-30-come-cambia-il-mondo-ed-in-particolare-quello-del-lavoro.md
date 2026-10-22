@@ -17,12 +17,14 @@ Beh io personalmente nessuna.
 
 Cambiando il modo di lavorare inizia a diventare insostenibile il vecchio stile di lavoro, e come sostiene Marco Montemagno in un video tra una ventina di anni (ma forse anche di meno) la maggior parte dei lavori saranno fatti da macchine.
 
-<iframe src="https://www.youtube.com/embed/5jzl1Efo9tM" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/5jzl1Efo9tM" data-title="Come cambia il mondo, ed in particolare quello del lavoro — YouTube"><img src="https://i3.ytimg.com/vi/5jzl1Efo9tM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: Come cambia il mondo, ed in particolare quello del lavoro — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=5jzl1Efo9tM">Apri il video su YouTube</a>
 
 È una frase che colpisce molto soprattutto quando senti parlare di disoccupazione già oggi, figurati tra vent'anni....
 Possibile quindi che il domani sia così grigio? Beh in realtà andrebbe fatta in primis una riflessione su come funziona il modello educativo oggi, eccoti un video che ne riassume brevemente le caratteristiche.
 
-<iframe src="https://www.youtube.com/embed/SVeNeN4MoNU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/SVeNeN4MoNU" data-title="Come cambia il mondo, ed in particolare quello del lavoro — YouTube"><img src="https://i3.ytimg.com/vi/SVeNeN4MoNU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: Come cambia il mondo, ed in particolare quello del lavoro — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=SVeNeN4MoNU">Apri il video su YouTube</a>
 
 In pratica si portano le persone a credere che il lavoro da dipendente sia il punto di arrivo, e nessuno è incentivato ad usare la propria testa, la propria inventiva ma si è parte di una catena di montaggio esattamente come quelle del '900. Il risultato di questo approccio è davanti agli occhi di tutti, c'è tanta disoccupazione.
 

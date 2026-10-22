@@ -1,0 +1,25 @@
+---
+import { blogPagePath } from '../lib/posts';
+interface Props { currentPage: number; totalPages: number }
+const { currentPage, totalPages } = Astro.props;
+---
+{totalPages > 1 && (
+  <nav class="pagination" aria-label="Pagine del blog">
+    {currentPage > 1 && <a href={blogPagePath(currentPage - 1)} rel="prev">← Precedente</a>}
+    <span aria-current="page">Pagina {currentPage} di {totalPages}</span>
+    {currentPage < totalPages && <a href={blogPagePath(currentPage + 1)} rel="next">Successiva →</a>}
+  </nav>
+)}
+<style>
+  .pagination {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  a, span { padding: 0.6rem; }
+  a { border: 1px solid currentColor; border-radius: 4px; }
+  a:hover, a:focus-visible { background: var(--text-main); color: var(--background-body); }
+</style>

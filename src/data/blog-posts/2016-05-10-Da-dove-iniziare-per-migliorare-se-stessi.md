@@ -24,7 +24,8 @@ Se credi di non avere abbastanza tempo lo scheduling ti permetterà di poterti o
 
 L'ultimo consiglio che sento di darti se sei sfiduciato e credi che con il poco tempo libero che hai non sei in grado di imparare qualcosa di nuovo è che bastano in media venti ore per imparare una nuova abilità come suonare uno strumento come puoi vedere nel video appena sotto.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/5MgBikgcWnY" data-title="Da dove iniziare per migliorare se stessi — YouTube"><img src="https://i3.ytimg.com/vi/5MgBikgcWnY/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: Da dove iniziare per migliorare se stessi — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=5MgBikgcWnY">Apri il video su YouTube</a>
 
 Ti lascio con questo testo di [Seth Godin](http://sethgodin.typepad.com/seths_blog/2016/04/transformation-tourism.html), logicamente in inglese:
 

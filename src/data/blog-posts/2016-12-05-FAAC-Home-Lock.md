@@ -22,7 +22,8 @@ Il sistema centrale ha un comunicatore telefonico (PSTN o GSM) che gli consente 
 
 Un'altra particolarità del sistema di allarme è la sua modularità, è infatti possibile aggiungere dei componenti per aumentare la sicurezza della propria casa. I componenti possono essere sensori di vetri rotti, rilevatori di fumo o sensori di movimento interni ed esterni.
 
-<iframe src="https://player.vimeo.com/video/168020725?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="video-embed" style="--video-ratio: 640 / 360" data-embed-url="https://player.vimeo.com/video/168020725?title=0&amp;byline=0&amp;portrait=0" data-title="FAAC Home Lock — Vimeo"><button type="button" class="video-play" aria-label="Riproduci video: FAAC Home Lock — Vimeo"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://vimeo.com/168020725">Apri il video su Vimeo</a>
 
 [NUOVO ANTIFURTO HOMELOCK](https://vimeo.com/168020725) from [FAAC Simply automatic](https://vimeo.com/faacgroup) on [Vimeo](https://vimeo.com).
 

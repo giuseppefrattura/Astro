@@ -1,0 +1,44 @@
+<script>
+  // Delegation also covers articles reached through Astro's ClientRouter.
+  document.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const button = event.target.closest<HTMLButtonElement>('.video-play');
+    const container = button?.closest<HTMLElement>('.video-embed');
+    if (!container?.dataset.embedUrl) return;
+    const url = new URL(container.dataset.embedUrl);
+    if (url.protocol !== 'https:' || !['www.youtube-nocookie.com', 'player.vimeo.com', 'www.facebook.com'].includes(url.hostname)) return;
+    url.searchParams.set('autoplay', '1');
+    const iframe = document.createElement('iframe');
+    iframe.src = url.href;
+    iframe.title = container.dataset.title || 'Video';
+    iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.tabIndex = 0;
+    container.replaceChildren(iframe);
+    iframe.focus();
+  });
+</script>
+<style is:global>
+  .video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: var(--video-ratio, 16 / 9);
+    margin: 1.5rem 0 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #111;
+    color: #fff;
+  }
+  .video-embed img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
+  .video-play {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    border: 0; background: transparent; color: #fff; cursor: pointer;
+    display: grid; place-items: center; font: inherit;
+  }
+  .video-play span { padding: 0.75rem 1rem; background: #b51217; border-radius: 8px; }
+  .video-play:focus-visible { outline: 3px solid white; outline-offset: -6px; }
+  .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-link { font-size: 0.875rem; }
+</style>

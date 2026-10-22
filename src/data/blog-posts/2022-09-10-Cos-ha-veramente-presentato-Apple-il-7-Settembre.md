@@ -32,4 +32,5 @@ Piccola delusione viene poi per il nuovo **Apple Watch Ultra**, che si presenta 
 
 Se vi siete persi l'evento eccovi il video su youtube:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ux6zXguiqxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-embed" style="--video-ratio: 560 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/ux6zXguiqxM" data-title="Cos&#x27;ha veramente presentato Apple il 7 Settembre — YouTube"><img src="https://i3.ytimg.com/vi/ux6zXguiqxM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: Cos&#x27;ha veramente presentato Apple il 7 Settembre — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=ux6zXguiqxM">Apri il video su YouTube</a>

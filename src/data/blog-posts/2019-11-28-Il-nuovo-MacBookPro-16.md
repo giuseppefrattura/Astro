@@ -43,4 +43,5 @@ I prezzi per l'Italia partono da 2799€ iva inclusa e arrivano a poco più di 7
 
 Per ulteriori informazioni ti lascio questo video di Andrea Galeazzi:
 
-<iframe width="700" height="315" src="https://www.youtube.com/embed/98x-pYcCAlk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-embed" style="--video-ratio: 700 / 315" data-embed-url="https://www.youtube-nocookie.com/embed/98x-pYcCAlk" data-title="Il nuovo MacBook Pro 16 — YouTube"><img src="https://i3.ytimg.com/vi/98x-pYcCAlk/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" /><button type="button" class="video-play" aria-label="Riproduci video: Il nuovo MacBook Pro 16 — YouTube"><span aria-hidden="true">▶ Riproduci video</span></button></div>
+<a class="video-link" href="https://www.youtube.com/watch?v=98x-pYcCAlk">Apri il video su YouTube</a>
