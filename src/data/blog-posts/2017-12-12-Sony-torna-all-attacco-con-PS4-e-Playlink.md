@@ -6,7 +6,7 @@ publishDate: 12 Dec 2017
 description: Come utilizzare il proprio smartphone come controller per PS4
 ---
 
-In questi giorni è uscita una nuova applicazione Sony per Ps4 che come per [Playstation Vr]({% post_url 2016-09-19-Sony-PlayStation-VR %}) cambia il modo di giocare con la consolle.
+In questi giorni è uscita una nuova applicazione Sony per Ps4 che come per [Playstation Vr](/blog/sony-playstation-vr/) cambia il modo di giocare con la consolle.
 
 <!--more-->
 

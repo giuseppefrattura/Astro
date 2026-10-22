@@ -50,6 +50,8 @@ for file in files:
         if meta.get('property') in ('og:url', 'twitter:url'):
             check(meta.get('content') == canonical[0], f'{route}: inconsistent social URL')
     check(not doc.select('iframe'), f'{route}: eager embedded video')
+    for anchor in doc.select('a'):
+        check('post_url' not in unquote(anchor.get('href', '')), f'{route}: unresolved legacy post link')
     for tag, attrs in doc.tags:
         candidates = []
         if tag in ('img', 'script', 'source', 'audio'):
@@ -81,4 +83,11 @@ sitemap = ET.parse(ROOT / 'sitemap.xml')
 locations = [node.text for node in sitemap.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 check(len(locations) == len(set(locations)), 'Duplicate sitemap URLs')
 check(set(locations) == canonicals, 'Sitemap differs from canonical public pages')
+feed = ET.parse(ROOT / 'feed.xml')
+items = feed.findall('./channel/item')
+check(bool(items), 'RSS feed is empty')
+for item in items:
+    check(item.findtext('link') in canonicals, 'RSS links to an unpublished article')
+    check(item.findtext('guid') == item.findtext('link'), 'RSS GUID differs from canonical URL')
+
 print(f'OK: {len(canonicals)} public pages; metadata, sitemap, local media, videos and pagination checked.')

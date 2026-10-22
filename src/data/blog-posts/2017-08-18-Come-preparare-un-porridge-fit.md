@@ -6,8 +6,6 @@ publishDate: 18 Aug 2017
 description: Una colazione sana e nutriente a base di avena
 ---
 
-![Porridge](https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/20838298_2007241186161581_5209741376668827648_n.jpg)
-
 Preparare il porridge è facile e veloce, permette di fare una colazione buona, salutare e nutriente, vediamo quali sono i passi e gli ingredienti per creare questa ricetta fit.
 
 <!--more-->

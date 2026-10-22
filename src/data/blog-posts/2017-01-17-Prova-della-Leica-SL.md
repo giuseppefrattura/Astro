@@ -6,13 +6,11 @@ publishDate: 13 Jan 2017
 description: Test e impressioni sulla fotocamera Leica SL con obiettivo 50mm F1.4
 ---
 
-![Leica SL](https://no-detour.leica-camera.com/img/feature_gallery/feature_09_02.jpg)
-
 Sono tornato dagli amici di [New Old Camera](http://www.newoldcamera.it/) questa volta a provare una Leica SL con lente Leica 50mm F1.4 ed è stata un'esperienza quasi mistica, eccola in breve.
 
 <!--more-->
 
-Dopo aver provato la [Hasselblad X1D]({% post_url 2016-11-28-Prova-della-Hasselblad-X1D %}) Ryuichi Watanabe mi ha proposto di provare anche la Leica SL quando fossi stato libero, pochi giorni dopo ha caricato su youtube un video dove avvisava dell'arrivo del 50mm f1.4 proprio per la SL, ho quindi approfittato e fissato subito un appuntamento per provarla.
+Dopo aver provato la [Hasselblad X1D](/blog/prova-della-hasselblad-x1d/) Ryuichi Watanabe mi ha proposto di provare anche la Leica SL quando fossi stato libero, pochi giorni dopo ha caricato su youtube un video dove avvisava dell'arrivo del 50mm f1.4 proprio per la SL, ho quindi approfittato e fissato subito un appuntamento per provarla.
 
 Le prime impressioni della macchina è che sia veramente pesante e l'ottica da 50mm è veramente grande soprattutto se comparata al mio 50mm f1.4 Pentax, per fortuna il peso complessivo non era superiore a quello della mia Pentax K-5, quindi non è stato un grande sforzo portarla con me.
 
@@ -26,8 +24,6 @@ Una particolarità della fotocamera che mi ha colpito è la possibilità della c
 
 Tramite appositi anelli adattatori è utilizzabile con 48 lenti per la serie M, 16 lenti della serie S, 64 R e 21 Cine.
 
-![Compatibilità lenti Leica](https://static.leica-camera.com/var/leica/storage/images/media/media-asset-management-mam/global-international/photography/sl-system/leica-sl-typ-601/details/160726_details_kompatibilitaet_2400x1350/1566432-6-eng-MA/160726_details_kompatibilitaet_2400x1350_teaser-1200x675.jpg)
-
 La Leica SL monta un sensore Full frame CMOS da 24 Megapixel, con possibilità di scatto continuo fino a 11 fps, fa video in 4K ad una qualità impressionante!
 
 `youtube: jXiwPLn81zc`
@@ -36,4 +32,4 @@ Insomma che dire una macchina stupenda ad un costo comunque molto alto. Non aven
 
 Lascio qualche scatto fatto con la Leica SL e la lente 50mm f1.4:
 
-[![Foto con Leica SL](https://c3.staticflickr.com/1/236/31435325562_ca9fe0faef_z.jpg)](https://www.flickr.com/photos/giuseppefrattura/31435325562/in/album-72157676343043880/)
+[<img src="https://c3.staticflickr.com/1/236/31435325562_ca9fe0faef_z.jpg" alt="Foto con Leica SL" width="640" height="427" loading="lazy" decoding="async" />](https://www.flickr.com/photos/giuseppefrattura/31435325562/in/album-72157676343043880/)

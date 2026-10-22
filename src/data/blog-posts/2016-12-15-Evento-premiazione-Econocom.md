@@ -10,7 +10,7 @@ Il 15 Dicembre si è tenuto l'evento "The future is on" di Econocom per premiare
 
 ![Buzzoole](https://buzzoole.com/track-img.php?code=53OBQVL6UI0KJ9MPC45V)
 
-Del concorso Econocom ho già scritto in [questo articolo]({% post_url 2016-10-08-Econocom-contest %}), si tratta in sostanza di un contest nel quale proporre idee innovative, il vincitore avrebbe vinto svariati premi Samsung.
+Del concorso Econocom ho già scritto in [questo articolo](/blog/econocom-contest/), si tratta in sostanza di un contest nel quale proporre idee innovative, il vincitore avrebbe vinto svariati premi Samsung.
 
 ![Umberto Guidoni](../assets/Econocom/Umberto_Guidoni.jpg)
 

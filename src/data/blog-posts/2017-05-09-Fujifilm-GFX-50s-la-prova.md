@@ -21,4 +21,4 @@ La qualità delle foto è molto alta e scattare con 50 megapixel assicura dei de
 
 Vi lascio qualche foto che ho scattato a Milano in zona Duomo con la Fujifilm GFX 50s
 
-[![Fujifilm GFx 50S](https://c1.staticflickr.com/5/4172/33622414383_65587e062b_z.jpg)](https://www.flickr.com/photos/giuseppefrattura/albums/72157681264491661)
+[<img src="https://c1.staticflickr.com/5/4172/33622414383_65587e062b_z.jpg" alt="Fujifilm GFx 50S" width="480" height="640" loading="lazy" decoding="async" />](https://www.flickr.com/photos/giuseppefrattura/albums/72157681264491661)

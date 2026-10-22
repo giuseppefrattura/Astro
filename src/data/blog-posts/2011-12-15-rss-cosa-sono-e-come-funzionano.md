@@ -13,7 +13,7 @@ Molti dei moderni browser integrano un lettore di RSS, però uno dei metodi più
 
 Iscriversi a dei feed RSS è semplicissimo, basta andare sul sito desiderato e cercare un immagine con un link come questo:
 
-![rss](http://www.ice.gov.it/rss/rss.jpg)
+[<img src="/assets/icons/rss.svg" alt="Icona RSS" width="64" height="64" loading="lazy" />](/feed.xml)
 
 Cliccarci sopra, ed ora le possibilità sono due:  
 1) Vi si apre la pagina di FeedBurner, da qui selezionate Google Reader ed in automatico avete le news del sito desiderato sulla vostra pagina di Google.  
@@ -22,4 +22,4 @@ Cliccarci sopra, ed ora le possibilità sono due:
 Congratulazioni ora sapete come usare uno degli strumenti più potenti di internet, con il quale è possibile tenersi aggiornati sulle notizie che ci interessano.
 
 Prova ad iscriverti al mio RSS  
-[qui](http://giuseppefrattura.website/feed.xml).
+[qui](/feed.xml).

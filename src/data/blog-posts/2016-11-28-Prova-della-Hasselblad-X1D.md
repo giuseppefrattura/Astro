@@ -10,11 +10,11 @@ description: Recensione della mirrorless medio formato Hasselblad X1D
 
 Grazie agli amici di [NewOldCamera](http://www.newoldcamera.it) di Milano ho avuto la possibilità di provare per un'ora la Hasselblad X1D, una mirrorless Medio Formato dal valore superiore ai diecimila euro.
 
-Delle fotocamere Mirrorless parlai in un mio vecchio articolo che trovi [qui]({% post_url 2012-02-14-fotocamere-evil-compatte-fuori-reflex-dentro %}).
+Delle fotocamere Mirrorless parlai in un mio vecchio articolo che trovi [qui](/blog/fotocamere-evil-compatte-fuori-reflex-dentro/).
 
 La X1D è una fotocamera unica nel suo genere, praticamente tutti i marchi di reflex hanno una mirrorless ma la X1D è l'unica con un sensore medio formato, più grande quindi di un sensore Full Frame.
 
-![Medium Format sensor size](https://4.img-dpreview.com/files/p/TS560x560~forums/57989520/b97c992fc27a4f77a8e08e23f38500e6)
+<img src="https://4.img-dpreview.com/files/p/TS560x560~forums/57989520/b97c992fc27a4f77a8e08e23f38500e6" alt="Medium Format sensor size" width="310" height="249" loading="lazy" decoding="async" />
 *immagine da dpReview*
 
 La risoluzione della fotocamera è da 50 megapixel, in pratica ogni RAW pesa sui 100MB quindi se si usano memory card lente si dovrà attendere un paio di secondi tra una foto e l'altra, con fotocamere del genere consiglio schede di memoria che superino i 100MB/sec in scrittura come la [Lexar Professional](http://amzn.to/2fWx09b).
@@ -32,6 +32,6 @@ Nonostante le dimensioni ed il peso la macchina ha un ottimo grip, risulta molto
 
 La Hasselblad X1D è sicuramente un'ottima macchina fotografica, non per tutti, ed il prezzo lo fa capire subito. Il medio formato da sicuramente grande soddisfazioni in condizioni di scarsa luminosità o di stampe di grande dimensioni, avere una macchina con 50 megapixel significa anche poter effettuare dei crop senza perdere qualità in stampa. Ha un prezzo molto alto anche perché è la prima nel suo genere, un prodotto unico che potrebbe rivoluzionare un intero segmento di mercato.
 
-[![B1013713](https://c5.staticflickr.com/6/5460/30306722644_8a754bbe3b_z.jpg)](https://www.flickr.com/photos/giuseppefrattura/30306722644/in/album-72157676849188685/)
+[<img src="https://c5.staticflickr.com/6/5460/30306722644_8a754bbe3b_z.jpg" alt="B1013713" width="480" height="640" loading="lazy" decoding="async" />](https://www.flickr.com/photos/giuseppefrattura/30306722644/in/album-72157676849188685/)
 
 Se vuoi vedere qualche scatto di prova ti invito a visitare il mio [profilo flickr](https://www.flickr.com/photos/giuseppefrattura/albums/72157676849188685).

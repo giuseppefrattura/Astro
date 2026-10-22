@@ -1,5 +1,33 @@
 # Ottimizzazioni implementate — 22 ottobre 2026
 
+## Aggiornamento dopo la pubblicazione
+
+Verifica del 22 ottobre 2026, ore 22:44 CEST, sulla homepage pubblicata dopo il deploy del commit `e360f73`:
+
+| Misura | Mobile | Desktop |
+|---|---:|---:|
+| Prestazioni | 99 | 100 |
+| Accessibilità | 100 | 100 |
+| Best practice | 100 | 100 |
+| SEO | 100 | 100 |
+| LCP | 2,1 s | 0,4 s |
+| TBT | 0 ms | 0 ms |
+| CLS | 0 | 0 |
+
+[Report Google mobile](https://pagespeed.web.dev/analysis/https-giuseppefrattura-com/81vlezbefu?form_factor=mobile) · [Report desktop](https://pagespeed.web.dev/analysis/https-giuseppefrattura-com/81vlezbefu?form_factor=desktop).
+
+Una esecuzione per profilo, dati di laboratorio; Google non ha dati sul campo per questo sito. Il CLS è passato da 0,096/0,164 a zero; il nuovo LCP mobile è più alto del precedente 1,1 s, pur restando sotto 2,5 s. Sono cambiate sia la pagina sia la gestione di Sentry durante gli audit: non attribuire ogni variazione a un singolo intervento. L'opportunità di cache segnalata è scesa da 159 a 9 KiB stimati.
+
+Il primo deploy di `5bab5ba` era fallito per la versione Node 22.23.3, non accettata da Astro. Il successivo commit `e360f73`, con Node 24, è stato distribuito con successo: [deploy effettivo](https://github.com/giuseppefrattura/Astro/actions/runs/39850722003). Il link comunicato inizialmente per il deploy rimandava invece a CodeQL.
+
+Verificati esternamente gli header HTML (`max-age=0,must-revalidate`), JavaScript con hash (`max-age=31536000,immutable`) e logo (`max-age=86400`). Le policy interne di CloudFront non sono state lette.
+
+Completamenti successivi nel codice: dieci collegamenti Jekyll convertiti agli URL correnti; dimensioni misurate per cinque immagini editoriali esterne; tre immagini non più raggiungibili rimosse; illustrazione RSS sostituita con icona locale e feed `/feed.xml` ripristinato con autodiscovery. Nessuna immagine esterna è stata ripubblicata. Le verifiche HTTP dei media sono puntuali, non garanzie di disponibilità futura.
+
+Sono pronti codice e test per i redirect HTTP 301 in `infrastructure/cloudfront/`, ma non sono ancora applicati ad AWS. Il secret `SENTRY_AUTH_TOKEN` risulta assente e non è disponibile in locale. Istruzioni e limitazioni di accesso sono documentate nella stessa cartella.
+
+Le sezioni seguenti descrivono la prima implementazione e le verifiche locali prima del deploy.
+
 ## Modifiche
 
 - Dominio pubblico, canonical e metadati social coerenti con la route. Sitemap generata da contenuti e pagine del blog e dichiarata in robots.txt.
