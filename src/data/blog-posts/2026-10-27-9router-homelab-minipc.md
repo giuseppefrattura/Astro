@@ -74,6 +74,7 @@ services:
       - "$HOME/.9router:/app/data"
     environment:
       - DATA_DIR=/app/data
+      - INITIAL_PASSWORD="****"
 ```
 
 Avvia il container in background:
