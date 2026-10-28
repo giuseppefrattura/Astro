@@ -11,6 +11,31 @@ const permalink = new URL(blogPagePath(currentPage), Astro.site).href;
 <BaseLayout title={title} description={`Articoli di Giuseppe Frattura su software, tecnologia e fotografia. Pagina ${currentPage}.`} permalink={permalink} current="blog">
   <div class="container">
     <h1>{title}</h1>
+    <form
+      id="blog-search-form"
+      class="blog-search"
+      {...({
+        toolname: 'filter-blog-archive',
+        tooldescription: "Filtra e mostra gli articoli del blog pertinenti all'argomento cercato.",
+        toolautosubmit: '',
+      } as any)}
+    >
+      <label for="blog-search-input">Cerca negli articoli</label>
+      <div class="blog-search-controls">
+        <input
+          type="search"
+          id="blog-search-input"
+          name="query"
+          placeholder="Es. 9Router, Claude Code, Docker, Leica..."
+          {...({
+            toolparamdescription: 'Es. 9Router, Claude Code, Docker, Leica, Spring Boot',
+          } as any)}
+          required
+        />
+        <button type="submit">Cerca</button>
+      </div>
+      <div id="blog-search-results" class="blog-search-results" aria-live="polite" hidden></div>
+    </form>
     {posts.map((post, index) => (
       <div>
         {index !== 0 && <hr />}
@@ -26,8 +51,132 @@ const permalink = new URL(blogPagePath(currentPage), Astro.site).href;
     <Pagination currentPage={currentPage} totalPages={totalPages} />
   </div>
 </BaseLayout>
+<script>
+  import { fetchPostsIndex, filterPosts } from '../lib/webmcp';
+
+  interface AgentSubmitEvent extends SubmitEvent {
+    readonly agentInvoked?: boolean;
+    respondWith?: (promise: Promise<unknown>) => void;
+  }
+
+  function setupBlogSearchForm() {
+    const form = document.getElementById('blog-search-form') as HTMLFormElement | null;
+    const resultsContainer = document.getElementById('blog-search-results');
+    if (!form || !resultsContainer) return;
+
+    form.addEventListener('submit', (rawEvent) => {
+      const event = rawEvent as AgentSubmitEvent;
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      const query = String(formData.get('query') ?? '').trim();
+
+      if (!query) {
+        if (event.agentInvoked && event.respondWith) {
+          event.respondWith(Promise.resolve('Validation failed: query (Inserisci un termine di ricerca)'));
+        }
+        return;
+      }
+
+      const searchPromise = (async () => {
+        const allPosts = await fetchPostsIndex();
+        const matches = filterPosts(allPosts, query, undefined, 10);
+
+        resultsContainer.hidden = false;
+        resultsContainer.replaceChildren();
+
+        const summary = document.createElement('p');
+        summary.className = 'blog-search-summary';
+        summary.textContent =
+          matches.length > 0
+            ? `Trovati ${matches.length} articoli per "${query}":`
+            : `Nessun articolo trovato per "${query}".`;
+        resultsContainer.appendChild(summary);
+
+        if (matches.length > 0) {
+          const list = document.createElement('ul');
+          for (const post of matches) {
+            const item = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = post.url;
+            link.textContent = post.title;
+            const dateSpan = document.createElement('span');
+            dateSpan.textContent = ` (${post.publishDate})`;
+            item.append(link, dateSpan);
+            list.appendChild(item);
+          }
+          resultsContainer.appendChild(list);
+        }
+
+        return JSON.stringify({ query, count: matches.length, results: matches });
+      })();
+
+      if (event.agentInvoked && event.respondWith) {
+        event.respondWith(searchPromise);
+      } else {
+        void searchPromise;
+      }
+    });
+  }
+
+  setupBlogSearchForm();
+  document.addEventListener('astro:after-swap', setupBlogSearchForm);
+</script>
 <style>
   h2, time { font-family: var(--font-family-sans); font-weight: 700; }
   time { color: var(--text-secondary); }
   hr { margin: 60px auto; }
+  .blog-search {
+    margin: 1.5rem 0 2.5rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 8px;
+  }
+  .blog-search label {
+    display: block;
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .blog-search-controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .blog-search-controls input {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 0.55rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 6px;
+    background: var(--background-body);
+    color: var(--text-main);
+  }
+  .blog-search-controls button {
+    padding: 0.55rem 1.1rem;
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid var(--text-main);
+    border-radius: 6px;
+    background: var(--text-main);
+    color: var(--background-body);
+    cursor: pointer;
+  }
+  .blog-search-results {
+    margin-top: 1rem;
+    font-family: var(--font-family-sans);
+  }
+  .blog-search-summary {
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+  }
+  form:tool-form-active {
+    outline: 2px dashed #2563eb;
+    background-color: rgba(37, 99, 235, 0.06);
+  }
+  button:tool-submit-active {
+    outline: 2px dashed #dc2626;
+  }
 </style>

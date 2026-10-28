@@ -29,6 +29,13 @@ const { title, description, permalink, current } = Astro.props;
     <Footer />
     <VideoPlayer />
   </div>
+  <script>
+    import { registerSiteWebMCPTools } from '../lib/webmcp';
+    void registerSiteWebMCPTools();
+    document.addEventListener('astro:after-swap', () => {
+      void registerSiteWebMCPTools();
+    });
+  </script>
 </body>
 </html>
 
